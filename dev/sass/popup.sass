@@ -1,0 +1,94 @@
+.popup
+	background: #FFF
+	box-shadow: 0px 0px 20px rgba(166, 166, 166, 0.4)
+	border-radius: 5px
+	padding: 45px
+	display: none
+	&-title
+		font-family: Merriweather
+		font-style: normal
+		font-weight: bold
+		font-size: 25px
+		text-align: center
+		color: #2E4878
+		margin-bottom: 20px
+	&-text
+		font-weight: 300
+		font-size: 17px
+		color: #2E4878
+		margin-bottom: 20px
+		span
+			font-weight: 500
+	&-img
+		img
+			max-width: 100%
+	&-map
+		width: 800px
+		height: 600px
+		img
+			max-width: 100%
+.popup#call .popup-title
+		font-size: 36px
+.popup#conf ul, .popup#conf ol, .popup#prices ul, .popup#prices ol
+	padding-left: 25px
+	margin-bottom: 15px
+.popup#prices
+	min-width: 630px
+	overflow-x: scroll
+	.popup-text
+		font-size: 15px
+.popup#quiz
+	padding-bottom: 25px
+	min-height: 509px
+	.tab.btn
+		border-radius: 4px
+		background: #DE232A
+		color: #fff
+		padding: 7px 20px
+		&:hover
+			color: #de232a
+			background: #fff
+	.form-item
+		display: flex
+		align-items: center
+		justify-content: center
+		input
+			margin-right: 10px
+		label
+			margin-bottom: 0
+			font-weight: 300
+			font-size: 16px
+			color: #2E4878
+	.cta
+		margin-bottom: 10px
+	.tab-content
+		min-height: 395px
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+.fancybox-close
+	top: 24px
+	right: 18px
+	width: 16px
+	height: 16px
+	background: none
+	&::after
+		content: ''
+		display: block
+		width: 100%
+		height: 2px
+		background: #2E4878
+		position: absolute
+		top: calc(50% - 1px)
+		left: 0
+		transform: rotate(45deg)
+	&::before
+		content: ''
+		display: block
+		width: 100%
+		height: 2px
+		background: #2E4878
+		position: absolute
+		top: calc(50% - 1px)
+		left: 0
+		transform: rotate(-45deg)

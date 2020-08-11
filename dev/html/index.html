@@ -1,0 +1,58 @@
+<?
+	$campaign = htmlspecialchars($_GET['utm_campaign']);
+	switch($campaign) {
+      case 'ege': 
+        $undertitle = 'ПОМОЖЕМ ВАШЕМУ РЕБЕНКУ ПОСТУПИТЬ В ПРЕСТИЖНЫЙ ВУЗ';
+        $title = 'Подготовим к ЕГЭ по английскому за 1 год на результат <span>выше 80 баллов</span>';
+        $print = '85points.png';
+        break;
+      case 'oge': 
+        $undertitle = 'ПОМОЖЕМ ВАШЕМУ РЕБЕНКУ БЕЗ ПРОБЛЕМ СДАТЬ ГИА';
+        $title = 'Подготовим к ОГЭ по английскому за 1 год <span>на оценку "5"</span>';
+        $print = 'ex5.png';
+        break;
+      case 'malyshi': 
+        $undertitle = 'ПРИВИВАЕМ ЛЮБОВЬ К АНГЛИЙСКОМУ ЯЗЫКУ С ДЕТСТВА';
+        $title = 'Подготовим детей 3-6 лет к школьному английскому <span>в игровой форме</span>';
+        $print = 'school.png';
+        break;
+      case 'shkolniki': 
+        $undertitle = 'НАУЧИМ ДЕЛАТЬ ДОМАШНЕЕ ЗАДАНИЕ САМОСТОЯТЕЛЬНО';
+        $title = 'Выведем Вашего ребенка на оценку 5 по английскому языку <span>за один год</span>';
+        $print = '5points.png';
+        break;
+      case 'online': 
+        $undertitle = 'ИНТЕРЕСНЫЕ УРОКИ НА СОБСТВЕННОЙ ОНЛАЙН ПЛАТФОРМЕ';
+        $title = 'Поможем выучить английский на "5" <span>в любой точке мира!</span>';
+        $print = 'platform.png';
+        break;
+      case 'exam': 
+        $undertitle = 'ГОТОВИМ К МЕЖДУНАРОДНЫМ ЭКЗАМЕНАМ ДЕТЕЙ И ВЗРОСЛЫХ';
+        $title = 'Поможем сдать международный экзамен <span>любой сложности</span>';
+        $print = 'exams.png';
+        break;
+      case 'vzroslye': 
+        $undertitle = 'ПОМОЖЕМ С АНГЛИЙСКИМ ДЛЯ РАБОТЫ, УЧЕБЫ, ПУТЕШЕСТВИЙ';
+        $title = 'Научим говорить, читать и писать на <span>английском за 1 год</span>';
+        $print = 'speak.png';
+        break;
+      default:
+        $undertitle = 'ПОМОГАЕМ ДЕТЯМ И ВЗРОСЛЫМ ПОНЯТЬ АНГЛИЙСКИЙ ЯЗЫК';
+        $title = 'Обучение детей и взрослых английскому языку <span>по классической методике</span>';
+        $print = 'speak.png';
+        break;
+    }
+?>
+<!-- include "blocks/header.html" -->
+<!-- include "blocks/banner.html" -->
+<!-- include "blocks/lesson.html" -->
+<!-- include "blocks/utp.html" -->
+<!-- include "blocks/courses.html" -->
+<!-- include "blocks/reviews.html" -->
+<!-- include "blocks/team.html" -->
+<!-- include "blocks/system.html" -->
+<!-- include "blocks/about.html" -->
+<!-- include "blocks/method.html" -->
+<!-- include "blocks/faq.html" -->
+<!-- include "blocks/contacts.html" -->
+<!-- include "blocks/footer.html" -->

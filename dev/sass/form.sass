@@ -1,0 +1,64 @@
+.form
+	&-item
+		margin-bottom: 23px
+		display: flex
+	&-title
+		font-family: Merriweather
+		font-weight: bold
+		font-size: 22px
+		line-height: 30px
+		text-align: center
+		color: #2E4878
+		margin-bottom: 18px
+	&-subtitle
+		font-weight: 300
+		font-size: 16px
+		text-align: center
+		color: #2E4878
+		margin-bottom: 33px
+	&-button
+		margin-bottom: 17px
+		text-align: center
+		.btn
+			padding-left: 50px
+			padding-right: 50px
+	&-checkbox
+		display: none
+		&-label
+			font-size: 13px
+			color: #2e4878
+			position: relative
+			padding-left: 26px
+			cursor: pointer
+			&::before
+				content: ''
+				display: block
+				width: 15px
+				height: 15px
+				background-color: #FFF
+				border: 1px solid #C4C4C4
+				border-radius: 2px
+				background-image: none
+				background-position: 50% 45%
+				background-repeat: no-repeat
+				position: absolute
+				left: 0
+				top: calc(50% - 7.5px)
+	&-alert
+		font-size: 14px
+		color: green
+		font-weight: 300
+		margin-bottom: 5px
+.input
+	background: #F9F9F9
+	border: 1px solid #C4C4C4
+	box-sizing: border-box
+	border-radius: 4px
+	font-weight: 300
+	font-size: 17px
+	color: #2E4878
+	padding: 11px 20px 
+	flex-grow: 1
+	width: 100%
+.form-checkbox:checked + .form-checkbox-label::before
+	background-image: url('../img/check.png')

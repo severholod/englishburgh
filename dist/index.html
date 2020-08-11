@@ -1,0 +1,2026 @@
+<?
+	$campaign = htmlspecialchars($_GET['utm_campaign']);
+	switch($campaign) {
+      case 'ege': 
+        $undertitle = 'ПОМОЖЕМ ВАШЕМУ РЕБЕНКУ ПОСТУПИТЬ В ПРЕСТИЖНЫЙ ВУЗ';
+        $title = 'Подготовим к ЕГЭ по английскому за 1 год на результат <span>выше 80 баллов</span>';
+        $print = '85points.png';
+        break;
+      case 'oge': 
+        $undertitle = 'ПОМОЖЕМ ВАШЕМУ РЕБЕНКУ БЕЗ ПРОБЛЕМ СДАТЬ ГИА';
+        $title = 'Подготовим к ОГЭ по английскому за 1 год <span>на оценку "5"</span>';
+        $print = 'ex5.png';
+        break;
+      case 'malyshi': 
+        $undertitle = 'ПРИВИВАЕМ ЛЮБОВЬ К АНГЛИЙСКОМУ ЯЗЫКУ С ДЕТСТВА';
+        $title = 'Подготовим детей 3-6 лет к школьному английскому <span>в игровой форме</span>';
+        $print = 'school.png';
+        break;
+      case 'shkolniki': 
+        $undertitle = 'НАУЧИМ ДЕЛАТЬ ДОМАШНЕЕ ЗАДАНИЕ САМОСТОЯТЕЛЬНО';
+        $title = 'Выведем Вашего ребенка на оценку 5 по английскому языку <span>за один год</span>';
+        $print = '5points.png';
+        break;
+      case 'online': 
+        $undertitle = 'ИНТЕРЕСНЫЕ УРОКИ НА СОБСТВЕННОЙ ОНЛАЙН ПЛАТФОРМЕ';
+        $title = 'Поможем выучить английский на "5" <span>в любой точке мира!</span>';
+        $print = 'platform.png';
+        break;
+      case 'exam': 
+        $undertitle = 'ГОТОВИМ К МЕЖДУНАРОДНЫМ ЭКЗАМЕНАМ ДЕТЕЙ И ВЗРОСЛЫХ';
+        $title = 'Поможем сдать международный экзамен <span>любой сложности</span>';
+        $print = 'exams.png';
+        break;
+      case 'vzroslye': 
+        $undertitle = 'ПОМОЖЕМ С АНГЛИЙСКИМ ДЛЯ РАБОТЫ, УЧЕБЫ, ПУТЕШЕСТВИЙ';
+        $title = 'Научим говорить, читать и писать на <span>английском за 1 год</span>';
+        $print = 'speak.png';
+        break;
+      default:
+        $undertitle = 'ПОМОГАЕМ ДЕТЯМ И ВЗРОСЛЫМ ПОНЯТЬ АНГЛИЙСКИЙ ЯЗЫК';
+        $title = 'Обучение детей и взрослых английскому языку <span>по классической методике</span>';
+        $print = 'speak.png';
+        break;
+    }
+?>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Школа английского языка в Самаре - ENGLISHBURGH</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+
+	<link rel="stylesheet" href="css/all.min.css">
+</head>
+<body>
+	<div class="overlay"></div>
+	<header class="header">
+		<div class="container">
+			<div class="header-top">
+				<div class="row align-items-center justify-content-between">
+					<div class="col col-lg-auto">
+						<div class="header-logo"><a href="/"><img src="/img/header/logo.png" alt="EnglishBurgh"></a></div>
+						<div class="header-title d-xxl-none">
+							Школа английского языка для детей и взрослых
+						</div>
+					</div>
+					<div class="col-2 header-col-title">
+						<div class="header-title">
+							Школа английского языка для детей и взрослых
+						</div>
+					</div>
+					<div class="col-2 header-col-loc d-none d-xl-block">
+						<div class="header-loc">
+							<div class="header-loc__icon">
+								<img src="/img/header/loc.png" alt="6 филиалов по Самаре">
+							</div>
+							<div class="header-loc__text">
+								<p>6 филиалов по Самаре</p>
+								<a href="#map" class="popup-lg-map">посмотреть на карте</a>
+							</div>
+						</div>
+					</div>
+					<div class="col col-xl-3 d-lg-block d-none">
+						<div class="header-info">
+							<div class="header-info__icon">
+								<img src="/img/header/phone.png" alt="Телефон в Самаре">
+							</div>
+							<div class="header-info__text">
+								<div class="header-phone">
+									<a href="tel:+78462265020">+7 (846) 226-50-20</a>
+								</div>
+								<div class="header-time">ежедневно с 9:00 до 22:00</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-auto col-xl-2 d-lg-block d-none">
+						<div class="header-button">
+							<a href="#call" class="btn btn-red popup-sm">Бесплатная консультация</a>
+						</div>
+					</div>
+				</div>
+				<!-- /.row -->
+			</div>
+			<div class="header-scroll">
+				<div class="row align-items-center">
+					<div class="col-auto">
+						<div class="header-logo"><a href="/"><img src="/img/logo-min.png" alt="EnglishBurgh"></a></div>
+					</div>
+					<div class="col-auto col-xl">
+						<nav class="header-nav">
+							<ul class="header-nav__list">
+								<li class="header-nav__item"><a href="#lesson" class="anchor">Пробное занятие</a></li>
+								<li class="header-nav__item"><a href="#courses" class="anchor">Наши курсы</a></li>
+								<li class="header-nav__item"><a href="#reviews" class="anchor">Отзывы</a></li>
+								<li class="header-nav__item"><a href="#team" class="anchor">Преподаватели</a></li>
+								<li class="header-nav__item"><a href="#about" class="anchor">О школе</a></li>
+								<li class="header-nav__item"><a href="#faq" class="anchor">Вопрос-ответ</a></li>
+								<li class="header-nav__item"><a href="#contacts" class="anchor">Контакты</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="col col-xl-4">
+						<div class="row align-items-center">
+							<div class="col-xl-6">
+								<div class="header-info">
+									<div class="header-info__icon">
+										<img src="/img/header/phone.png" alt="Телефон в Самаре">
+									</div>
+									<div class="header-phone">
+										<a href="tel:+78462265020">+7 (846) 226-50-20</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-6">
+								<div class="header-button">
+									<a href="#call" class="btn btn-red popup-sm">Бесплатная консультация</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header-mobile d-block d-lg-none">
+				<div class="row justify-content-between">
+					<div class="col-auto">
+						<div class="header-toggler">
+							<span class="header-toggler-line header-toggler-line-first"></span>
+							<span class="header-toggler-line header-toggler-line-second"></span>
+							<span class="header-toggler-line header-toggler-line-third"></span>
+						</div>
+					</div>
+					<div class="col-auto">
+						<div class="header-info">
+							<div class="header-info__icon">
+								<img src="/img/header/phone-white.png" alt="Телефон в Самаре">
+							</div>
+							<div class="header-phone">
+								<a href="tel:+78462265020">+7 (846) 226-50-20</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="mobile-menu">
+		<div class="mobile-nav">
+			<ul class="movile-nav__list">
+				<li class="mobile-nav__item"><a href="#lesson" class="anchor">Пробное занятие</a></li>
+				<li class="mobile-nav__item"><a href="#courses" class="anchor">Наши курсы</a></li>
+				<li class="mobile-nav__item"><a href="#reviews" class="anchor">Отзывы</a></li>
+				<li class="mobile-nav__item"><a href="#team" class="anchor">Преподаватели</a></li>
+				<li class="mobile-nav__item"><a href="#about" class="anchor">О школе</a></li>
+				<li class="mobile-nav__item"><a href="#faq" class="anchor">Вопрос-ответ</a></li>
+				<li class="mobile-nav__item"><a href="#contacts" class="anchor">Контакты</a></li>
+			</ul>
+		</div>
+		<div class="header-loc">
+			<div class="header-loc__icon">
+				<img src="/img/header/loc.png" alt="6 филиалов по Самаре">
+			</div>
+			<div class="header-loc__text">
+				<p>6 филиалов по Самаре</p>
+				<a href="#contacts-map" class="anchor">посмотреть на карте</a>
+			</div>
+		</div>
+	</div>
+<section class="banner">
+	<div class="banner-left">
+		<div class="banner-left-content">
+			<div class="banner-undertitle">
+              <?/*ПОМОГАЕМ ДЕТЯМ И ВЗРОСЛЫМ ПОНЯТЬ АНГЛИЙСКий ЯЗЫК*/?>
+              <?=$undertitle?>
+          	</div>
+			<div class="banner-title">
+              <?/*Обучение детей и взрослых английскому языку <span>по классической методике</span>*/?>
+              <?=$title?>
+          	</div>
+			<div class="banner-print">
+				<?/*<img src="/img/prints/speak.png" alt="Средний результат - 85 баллов">*/?>
+              	<img src="/img/prints/<?=$print?>" alt='<?=$title?>'>
+			</div>
+		</div>
+	</div>
+	<!-- /.banner-left -->
+	<div class="banner-right">
+		<div class="quiz">
+			<div class="quiz-text">
+				<div class="quiz-title">Ответьте на 4 вопроса и получите скидку на первый месяц обучения 10%</div>
+				<div class="quiz-subtitle">Отвечая на вопросы Вы экономите нам время, а мы за это дарим скидку</div>
+				<div class="quiz-button">
+					<a href="#quiz" class="btn btn-white popup-sm">Получить скидку 10%</a>
+				</div>
+				<div class="cta">Ответы на вопросы ни к чему не обязывают</div>
+			</div>
+			<div class="quiz-img"><img src="/img/bus.png" alt="Подберем удобное расписание и преподавателя"></div>
+		</div>
+	</div>
+	<!-- /.banner-right -->
+</section>
+<!-- /.banner -->
+<div class="popup" id="quiz">
+	<form action="" class="form-ajax">
+		<div class="tab-content tab-content-active" id="districts">
+			<div class="popup-title"> В каком районе Вы проживаете?</div>
+			<div class="row">
+				<div class="col-6">
+					<div class="form-item">
+						<input type="radio" name='district' id="district1" value='Железнодорожный'>
+						<label for="district1">Железнодорожный</label>
+					</div>
+				</div>
+				<div class="col-6">
+					<div class="form-item">
+						<input type="radio" name='district' id="district2" value='Октябрьский'>
+						<label for="district2">Октябрьский</label>
+					</div>
+				</div>
+				<div class="col-6">
+					<div class="form-item">
+						<input type="radio" name='district' id="district3" value='Кировский'>
+						<label for="district3">Кировский</label>
+					</div>
+				</div>
+				<div class="col-6">
+					<div class="form-item">
+						<input type="radio" name='district' id="district4" value='Промышленный'>
+						<label for="district4">Промышленный</label>
+					</div>
+				</div>
+				<div class="col-6">
+					<div class="form-item">
+						<input type="radio" name='district' id="district5" value='Красноглинский'>
+						<label for="district5">Красноглинский</label>
+					</div>
+				</div>
+				<div class="col-6">
+					<div class="form-item">
+						<input type="radio" name='district' id="district6" value='Самарский'>
+						<label for="district6">Самарский</label>
+					</div>
+				</div>
+				<div class="col-6">
+					<div class="form-item">
+						<input type="radio" name='district' id="district7" value='Куйбышевский'>
+						<label for="district7">Куйбышевский</label>
+					</div>
+				</div>
+				<div class="col-6">
+					<div class="form-item">
+						<input type="radio" name='district' id="district8" value='Советский'>
+						<label for="district8">Советский</label>
+					</div>
+				</div>
+				<div class="col-6">
+					<div class="form-item">
+						<input type="radio" name='district' id="district9" value='Ленинский'>
+						<label for="district9">Ленинский</label>
+					</div>
+				</div>
+				<div class="col-6">
+					<div class="form-item">
+						<input type="radio" name='district' id="district10" value='Область'>
+						<label for="district10">Я из области</label>
+					</div>
+				</div>
+			</div>
+			<div class="form-button"><span class="tab btn btn-red" data-target="time">Следующий вопрос</span></div>
+		</div>
+		<div class="tab-content" id="time">
+			<div class="popup-title">В какую смену учитесь?</div>
+			<div class="row">
+				<div class="col-12">
+					<div class="form-item">
+						<input type="radio" name='time' id="time1" value='Первая смена'>
+						<label for="time1">В первую смену</label>
+					</div>
+				</div>
+				<div class="col-12">
+					<div class="form-item">
+						<input type="radio" name='time' id="time2" value='Вторая смена'>
+						<label for="time2">Во вторую смену</label>
+					</div>
+				</div>
+				<div class="col-12">
+					<div class="form-item">
+						<input type="radio" name='time' id="time3" value='Другое'>
+						<label for="time3">Другое</label>
+					</div>
+				</div>
+			</div>
+			<div class="form-button"><span class="tab btn btn-red" data-target="age">Следующий вопрос</span></div>
+		</div>
+		<div class="tab-content" id="age">
+			<div class="popup-title">
+				Сколько лет ребенку?
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<div class="form-item">
+						<input type="radio" name='age' id="age1" value='4-5 лет'>
+						<label for="age1">4-5 лет</label>
+					</div>
+				</div>
+				<div class="col-12">
+					<div class="form-item">
+						<input type="radio" name='age' id="age2" value='6-8 лет'>
+						<label for="age2">6-8 лет</label>
+					</div>
+				</div>
+				<div class="col-12">
+					<div class="form-item">
+						<input type="radio" name='age' id="age3" value='9-12 лет'>
+						<label for="age3">9-12 лет</label>
+					</div>
+				</div>
+				<div class="col-12">
+					<div class="form-item">
+						<input type="radio" name='age' id="age4" value='13-15 лет'>
+						<label for="age4">13-15 лет</label>
+					</div>
+				</div>
+				<div class="col-12">
+					<div class="form-item">
+						<input type="radio" name='age' id="age5" value='16-18 лет'>
+						<label for="age5">16-18 лет</label>
+					</div>
+				</div>
+			</div>
+			<div class="form-button"><span class="tab btn btn-red" data-target="club">Следующий вопрос</span></div>
+		</div>
+		<div class="tab-content" id="club">
+			<div class="popup-title">Изучали английский в каком-то другом клубе?</div>
+			<div class="row">
+				<div class="col-12">
+					<div class="form-item">
+						<input type="radio" name='club' id="club1" value='да'>
+						<label for="club1">Да</label>
+					</div>
+				</div>
+				<div class="col-12">
+					<div class="form-item">
+						<input type="radio" name='club' id="club2" value='нет'>
+						<label for="club2">Нет</label>
+					</div>
+				</div>
+			</div>
+			<div class="form-button"><span class="tab btn btn-red" data-target="quiz-end">Следующий вопрос</span></div>
+		</div>
+		<div class="tab-content" id="quiz-end">
+			<div class="popup-title">Оставьте номер телефона</div>
+			<div class="form-subtitle">Наши менеджеры свяжутся с Вами и подробнее расскажут про скидку</div>
+			<div class="form-alert d-none">Заявка успешно отправлена</div>
+			<div class="form-item">
+				<input class="input" type="text" name="name" id="quiz-name" placeholder="Ваше имя">
+			</div>
+			<div class="form-item">
+				<input class="input form-tel" type="text" name="phone" id="quiz-phone" placeholder="Номер телефона" required>
+			</div>
+			<div class="cta">Оставьте заявку. Это ни к чему не обязывает</div>
+			<div class="form-button">
+				<button class="btn btn-red">Получить скидку</button>
+			</div>
+			<div class="form-conf">
+				<input type="checkbox" class="form-checkbox" name="checkbox" id="quiz-checkbox" checked required><label for="quiz-checkbox" class="form-checkbox-label">Соглашаюсь на обработку персональных данных</label>
+			</div>
+		</div>
+	</form>
+</div>
+<section class="lesson" id="lesson">
+	<div class="container">
+		<div class="lesson-head">
+			<div class="section-title lesson-title text-left">
+				Пробное занятие бесплатно
+			</div>
+			<div class="section-subtitle text-left">
+				Верно определенный уровень английского на старте поможет выстроить качественную программу обучения
+			</div>
+		</div>
+		<div class="lesson-body">
+			<div class="row no-gutters">
+				<div class="col-lg-8 col-xl-4">
+					<div class="lesson-item lesson-item-white lesson-utp">
+						<div class="lesson-utp__title">
+							На бесплатном занятии:
+						</div>
+						<div class="lesson-utp__item">
+							<div class="lesson-utp__icon">
+								<img src="/img/lesson/1.png" alt="Авторский тест для определения текущего уровня английского языка">
+							</div>
+							<div class="lesson-utp__text">Авторский тест для определения текущего уровня английского языка</div>
+						</div>
+						<div class="lesson-utp__item">
+							<div class="lesson-utp__icon">
+								<img src="/img/lesson/2.png" alt="Проведение первого занятия по классической методике">
+							</div>
+							<div class="lesson-utp__text">Проведение первого занятия по классической методике</div>
+						</div>
+						<div class="lesson-utp__item">
+							<div class="lesson-utp__icon">
+								<img src="/img/lesson/3.png" alt="Определение правильной формы обучения - онлайн или оффлайн">
+							</div>
+							<div class="lesson-utp__text">Определение правильной формы обучения - онлайн или оффлайн</div>
+						</div>
+						<div class="lesson-utp__item">
+							<div class="lesson-utp__icon">
+								<img src="/img/lesson/4.png" alt="Подбор типа занятий для получения максимального результата - индивидуальный или в группе">
+							</div>
+							<div class="lesson-utp__text">Подбор типа занятий для получения максимального результата - индивидуальный или в группе</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-xl-4">
+					<div class="lesson-item lesson-item-gray lesson-form">
+						<div class="lesson-form__img">
+							<img src="/img/lesson/car.png" alt="Пробное занятие">
+						</div>
+						<div class="form-title">Приходите на бесплатное занятие</div>
+						<div class="form-subtitle">Оставьте номер телефона, мы свяжемся с Вами и подберем удобное время</div>
+						<form action="" class="form-ajax">
+							<div class="form-alert d-none">Заявка успешно отправлена</div>
+							<div class="form-item">
+								<input class="input form-tel" type="tel" name="phone" id="lesson-phone" placeholder="Номер телефона" required>
+							</div>
+							<div class="form-button">
+								<button class="btn btn-red">Попробовать бесплатно</button>
+							</div>
+						</form>
+						<div class="cta">
+							Оставьте заявку, это ни к чему не обязывает
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-xl-4">
+					<div class="lesson-item lesson-item-white lesson-teacher">
+						<div class="lesson-teacher__name">
+							Анна Олеговна
+						</div>
+						<div class="lesson-teacher__position">
+							Преподаватель, стаж 6 лет
+						</div>
+						<div class="lesson-teacher__photo">
+							<img src="/img/lesson/Krasova.jpg" alt="Анна Олеговна">
+						</div>
+						<div class="lesson-teacher__cta">Решите проблемы с английским уже сегодня</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="utp">
+	<div class="container">
+		<div class="section-title utp-title text-left">Почему нас выбирают?</div>
+		<div class="slider-wrap d-lg-none">
+			<div class="utp-slider owl-carousel">
+				<div class="utp-item">
+					<div class="utp-item__icon">
+						<img src="/img/utp/1.png" alt="Опыт работы с 2000 года ">
+					</div>
+					<div class="utp-item__title">Опыт работы с 2000 года </div>
+					<div class="utp-item__text">Выпустили 1000 учеников. Помогли сдать 200 экзаменов</div>
+				</div>
+				<div class="utp-item">
+					<div class="utp-item__icon">
+						<img src="/img/utp/2.png" alt="6 филиалов по Самаре">
+					</div>
+					<div class="utp-item__title">6 филиалов по Самаре</div>
+					<div class="utp-item__text">Долго добираться? Эффективное он-лайн обучение на собственной платформе</div>
+				</div>
+				<div class="utp-item">
+					<div class="utp-item__icon">
+						<img src="/img/utp/3.png" alt="50 дипломированных специалистов-филологов">
+					</div>
+					<div class="utp-item__title">50 дипломированных <br> специалистов-филологов</div>
+					<div class="utp-item__text">и кандидатов филологических наук</div>
+				</div>
+				<div class="utp-item">
+					<div class="utp-item__icon">
+						<img src="/img/utp/4.png" alt="Обучаем по классической методике">
+					</div>
+					<div class="utp-item__title">Обучаем по классической методике</div>
+					<div class="utp-item__text">
+						<a href="#method" class="btn-link anchor">Почему классическая методика одна из лучших?</a>
+					</div>
+				</div>
+			</div>
+			<div class="slider-nav">
+				<button class="slider-prev" data-target="utp-slider"></button>
+				<button class="slider-next" data-target="utp-slider"></button>
+			</div>
+		</div>			
+		<div class="row d-none d-lg-flex">
+			<div class="col-3">
+				<div class="utp-item">
+					<div class="utp-item__icon">
+						<img src="/img/utp/1.png" alt="Опыт работы с 2000 года ">
+					</div>
+					<div class="utp-item__title">Опыт работы с 2000 года </div>
+					<div class="utp-item__text">Выпустили 1000 учеников. Помогли сдать 200 экзаменов</div>
+				</div>
+			</div>
+			<div class="col-3">
+				<div class="utp-item">
+					<div class="utp-item__icon">
+						<img src="/img/utp/2.png" alt="6 филиалов по Самаре">
+					</div>
+					<div class="utp-item__title">6 филиалов по Самаре</div>
+					<div class="utp-item__text">Долго добираться? Эффективное он-лайн обучение на собственной платформе</div>
+				</div>
+			</div>
+			<div class="col-3">
+				<div class="utp-item">
+					<div class="utp-item__icon">
+						<img src="/img/utp/3.png" alt="50 дипломированных специалистов-филологов">
+					</div>
+					<div class="utp-item__title">50 дипломированных <br> специалистов-филологов</div>
+					<div class="utp-item__text">и кандидатов филологических наук</div>
+				</div>
+			</div>
+			<div class="col-3">
+				<div class="utp-item">
+					<div class="utp-item__icon">
+						<img src="/img/utp/4.png" alt="Обучаем по классической методике">
+					</div>
+					<div class="utp-item__title">Обучаем по классической методике</div>
+					<div class="utp-item__text">
+						<a href="#method" class="btn-link anchor">Почему классическая методика одна из лучших?</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="courses" id="courses">
+	<div class="container">
+		<div class="section-title courses-title text-left">Наши курсы</div>
+		<div class="tabs">
+			<div class="tab" data-target='baby'>Для малышей</div>
+			<div class="tab tab-active" data-target='students'>Школьникам</div>
+			<div class="tab" data-target='adults'>Взрослым</div>
+			<div class="tab" data-target='oge'>ОГЭ</div>
+			<div class="tab" data-target='ege'>ЕГЭ</div>
+			<div class="tab" data-target='exams'>Подготовка к международным экзаменам</div>
+			<div class="tab" data-target='online'>Онлайн</div>
+		</div>
+		<div class="courses-content">
+			<div class="tab-content course" id="baby">
+				<div class="row">
+					<div class="col-5 d-none d-xl-block">
+						<div class="course-img"><img src="/img/courses/baby.svg" alt="Английский для школьников"></div>
+					</div>
+					<div class="col-xl-7">
+						<div class="course-content">
+							<div class="course-title">Английский для малышей</div>
+							<div class="course-price">
+								<div class="course-price__select">
+									<select name="price-select" class="input">
+										<option value="700">Индивидуальные занятия</option>
+										<option value="560">Групповые занятия (2 человека) </option>
+										<option value="460" selected>Групповые занятия (4 человека) </option>
+										<option value="360">Групповые занятия (6 человека) </option>
+									</select>
+								</div>
+								<div class="course-price__result">
+									<span class="price-result">460</span> руб. / 1 час
+								</div>
+							</div>
+							<div class="course-links">
+								<a href="#groups" class="btn-link popup-lg">Почему групповые занятия эффективнее?</a>
+								<a href="#prices" class="btn-link popup-lg">Посмотреть все варианты и цены</a>
+							</div>
+							<div class="course-img d-xl-none"><img src="/img/courses/baby.svg" alt="Английский для малышей"></div>
+							<div class="course-text read-more">
+								<p>Обучение английскому языку детей дошкольного возраста (3-6 лет) является одним из предварительных важных этапов, готовящих ребёнка к школе, закладывающих правильное произношение, накопление лексического запаса, умение понимать иностранную речь на слух и участвовать в несложной беседе.</p>
+								<p>На занятиях в Englishburgh в специально оборудованных для малышей классах Ваш ребёнок играючи освоит основные лексические группы (цвета, семья, животные и др.), выучит алфавит, познакомится с основами грамматики и будет петь популярные английские песенки.</p>
+								<p>Для занятий используется большой арсенал методических пособий, в том числе красочные брошюры, составленные нашими опытными квалифицированными педагогами, в которых маленькие ученики рисуют, обводят, раскрашивают. Каждый урок детально проработан и подробно описан в нашей книге методических указаний с перечнем всех игр, песенок и стихотворений, последовательно изучаемых на занятиях.</p>
+								<p>С нашими чуткими преподавателями в Englishburgh Ваш ребёнок будет учиться с удовольствием и полюбит английский язык уже в раннем возрасте.</p>
+							</div>
+							<div class="read-more-wrap d-md-none"><span class="read-more-btn">Показать полностью</span></div>
+							<div class="course-buttons">
+								<a href="#call" class="btn btn-red popup-sm">Попробовать бесплатно</a>
+								<!-- <a href="#baby-detail" class="popup-lg btn btn-transparent">Подробнее</a> -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="tab-content tab-content-active course" id="students">
+				<div class="row">
+					<div class="col-5 d-none d-xl-block">
+						<div class="course-img"><img src="/img/courses/school.png" alt="Английский для школьников"></div>
+					</div>
+					<div class="col-xl-7">
+						<div class="course-content">
+							<div class="course-title">Английский для школьников</div>
+							<div class="course-price">
+								<div class="course-price__select">
+									<select name="price-select" class="input">
+										<option value="700">Индивидуальные занятия</option>
+										<option value="560">Групповые занятия (2 человека) </option>
+										<option value="460" selected>Групповые занятия (4 человека) </option>
+										<option value="360">Групповые занятия (6 человека) </option>
+									</select>
+								</div>
+								<div class="course-price__result">
+									<span class="price-result">460</span> руб. / 1 час
+								</div>
+							</div>
+							<div class="course-links">
+								<a href="#groups" class="btn-link popup-lg">Почему групповые занятия эффективнее?</a>
+								<a href="#prices" class="btn-link popup-lg">Посмотреть все варианты и цены</a>
+							</div>
+							<div class="course-img d-xl-none"><img src="/img/courses/school.png" alt="Английский для школьников"></div>
+							<div class="course-text read-more">
+								<p>
+									Обучение английскому языку школьников является одной из важнейших составляющих современного качественного образования. Englishburgh поможет Вашему ребёнку получить все базовые знания, необходимые для дальнейшего обучения, устранить пробелы в школьных знаниях, подготовиться к успешной сдаче экзаменов и полюбить английский язык. А среди наших разнообразных программ Вы найдёте именно то, что нужно Вашему ребёнку в соотвествии с возрастом, уровнем владения языком и Вашими пожеланиями.
+								</p>
+								<ul>
+									<li>Английский для младших школьников (1-4 класс)</li>
+									<li>Школьный английский для среднего звена (5-9 класс)</li>
+									<li>Школьный английский для старших классов (10-11 класс)</li>
+								</ul>
+							</div>
+							<div class="read-more-wrap d-md-none"><span class="read-more-btn">Показать полностью</span></div>
+							<div class="course-buttons">
+								<a href="#call" class="btn btn-red popup-sm">Попробовать бесплатно</a>
+								<!-- <a href="#students-detail" class="popup-lg btn btn-transparent">Подробнее</a> -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="tab-content course" id="adults">
+				<div class="row">
+					<div class="col-5 d-none d-xl-block">
+						<div class="course-img"><img src="/img/courses/adults.png" alt="Английский для взрослых"></div>
+					</div>
+					<div class="col-xl-7">
+						<div class="course-content">
+							<div class="course-title">Английский для взрослых</div>
+							<div class="course-price">
+								<div class="course-price__select">
+									<select name="price-select" class="input">
+										<option value="700">Индивидуальные занятия</option>
+										<option value="560">Групповые занятия (2 человека) </option>
+										<option value="460" selected>Групповые занятия (4 человека) </option>
+										<option value="360">Групповые занятия (6 человека) </option>
+									</select>
+								</div>
+								<div class="course-price__result">
+									<span class="price-result">460</span> руб. / 1 час
+								</div>
+							</div>
+							<div class="course-links">
+								<a href="#groups" class="btn-link popup-lg">Почему групповые занятия эффективнее?</a>
+								<a href="#prices" class="btn-link popup-lg">Посмотреть все варианты и цены</a>
+							</div>
+							<div class="course-img d-xl-none"><img src="/img/courses/adults.png" alt="Английский для школьников"></div>
+							<div class="course-text read-more">
+								<p>
+									Английский для взрослых - легко и быстро, даже с нуля! Хотите свободно общаться в путешествиях за границей? Мечтаете посмотреть любимые американские фильмы и сериалы в оригинале? Или Вам нужно подтянуть английский для работы? В Englishburgh мы предлагаем Вам курсы английского языка для взрослых в соответствии с Вашими желаниями и потребностями.
+								</p>
+								<ul>
+									<li>
+										<p>Разговорный английский</p>
+										 Программа, основанная на популярнейших учебниках серий InsideOut и New English File издания Oxford, подразделяется на уровни Beginner (Начальный), Elementary (Элементарный), Pre-Intermediate (Ниже среднего), Intermediate (Средний) и Upper-Intermediate (Выше среднего).
+									</li>
+									<li>
+										<p>Бизнес английский</p>
+										Программа подбирается на основании индивидуальных потребностей клиента, учебное пособие выбирается исходя из сферы Вашего бизнеса.
+									</li>
+								</ul>
+							</div>
+							<div class="read-more-wrap d-md-none"><span class="read-more-btn">Показать полностью</span></div>
+							<div class="course-buttons">
+								<a href="#call" class="btn btn-red popup-sm">Попробовать бесплатно</a>
+								<!-- <a href="#adults-detail" class="popup-lg btn btn-transparent">Подробнее</a> -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="tab-content course" id="ege">
+				<div class="row">
+					<div class="col-5 d-none d-xl-block">
+						<div class="course-img"><img src="/img/courses/ege.svg" alt="Подготовка к ЕГЭ"></div>
+					</div>
+					<div class="col-xl-7">
+						<div class="course-content">
+							<div class="course-title">Подготовка к ЕГЭ</div>
+							<div class="course-price">
+								<div class="course-price__select">
+									<select name="price-select" class="input">
+										<option value="700">Индивидуальные занятия</option>
+										<option value="560">Групповые занятия (2 человека) </option>
+										<option value="460" selected>Групповые занятия (4 человека) </option>
+										<option value="360">Групповые занятия (6 человека) </option>
+									</select>
+								</div>
+								<div class="course-price__result">
+									<span class="price-result">460</span> руб. / 1 час
+								</div>
+							</div>
+							<div class="course-links">
+								<a href="#groups" class="btn-link popup-lg">Почему групповые занятия эффективнее?</a>
+								<a href="#prices" class="btn-link popup-lg">Посмотреть все варианты и цены</a>
+							</div>
+							<div class="course-img d-xl-none"><img src="/img/courses/ege.svg" alt="Английский для школьников"></div>
+							<div class="course-text read-more">
+								<p>
+									Успешная сдача экзаменов в 9 и 11 классе - важный шаг к дальнейшему образованию и поступлению в ВУЗ.
+									Мы предлагаем программы подготовки к ОГЭ и ЕГЭ, основанные на реальных устных и письменных тестовых заданиях, в сочетании с учебниками серии Macmillan уровней A1/А2 для подготовки к ОГЭ и В1 для подготовки к ЕГЭ, которые мы подкрепляем большим количеством дополнительных источников авторитетных изданий:
+								</p>
+								<ul>
+									<li>для отработки грамматики мы используем проверенный временем сборник упражнений Ю.Б.Голицынского и известный во всем мире учебник English Grammar in Use(Cambridge University Press);</li>
+									<li>для пополнения словарного запаса - пособие Vocabulary in Use (Cambridge University Press).</li>
+								</ul>
+								<p>Наши опытные преподаватели помогут Вашему ребёнку улучшить навыки устной и письменной речи, разобраться в грамматике, обогатить словарный запас, познакомиться с тонкостями выполнения заданий и подготовиться к успешной сдаче экзаменов.</p>
+							</div>
+							<div class="read-more-wrap d-md-none"><span class="read-more-btn">Показать полностью</span></div>
+							<div class="course-buttons">
+								<a href="#call" class="btn btn-red popup-sm">Попробовать бесплатно</a>
+								<!-- <a href="#ege-detail" class="popup-lg btn btn-transparent">Подробнее</a> -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="tab-content course" id="oge">
+				<div class="row">
+					<div class="col-5 d-none d-xl-block">
+						<div class="course-img"><img src="/img/courses/oge.svg" alt="Подготовка к ОГЭ"></div>
+					</div>
+					<div class="col-xl-7">
+						<div class="course-content">
+							<div class="course-title">Подготовка к ОГЭ</div>
+							<div class="course-price">
+								<div class="course-price__select">
+									<select name="price-select" class="input">
+										<option value="700">Индивидуальные занятия</option>
+										<option value="560">Групповые занятия (2 человека) </option>
+										<option value="460" selected>Групповые занятия (4 человека) </option>
+										<option value="360">Групповые занятия (6 человека) </option>
+									</select>
+								</div>
+								<div class="course-price__result">
+									<span class="price-result">460</span> руб. / 1 час
+								</div>
+							</div>
+							<div class="course-links">
+								<a href="#groups" class="btn-link popup-lg">Почему групповые занятия эффективнее?</a>
+								<a href="#prices" class="btn-link popup-lg">Посмотреть все варианты и цены</a>
+							</div>
+							<div class="course-img d-xl-none"><img src="/img/courses/oge.svg" alt="Английский для школьников"></div>
+							<div class="course-text read-more">
+								<p>
+									Успешная сдача экзаменов в 9 и 11 классе - важный шаг к дальнейшему образованию и поступлению в ВУЗ.
+									Мы предлагаем программы подготовки к ОГЭ и ЕГЭ, основанные на реальных устных и письменных тестовых заданиях, в сочетании с учебниками серии Macmillan уровней A1/А2 для подготовки к ОГЭ и В1 для подготовки к ЕГЭ, которые мы подкрепляем большим количеством дополнительных источников авторитетных изданий:
+								</p>
+								<ul>
+									<li>для отработки грамматики мы используем проверенный временем сборник упражнений Ю.Б.Голицынского и известный во всем мире учебник English Grammar in Use(Cambridge University Press);</li>
+									<li>для пополнения словарного запаса - пособие Vocabulary in Use (Cambridge University Press).</li>
+								</ul>
+								<p>Наши опытные преподаватели помогут Вашему ребёнку улучшить навыки устной и письменной речи, разобраться в грамматике, обогатить словарный запас, познакомиться с тонкостями выполнения заданий и подготовиться к успешной сдаче экзаменов.</p>
+							</div>
+							<div class="read-more-wrap d-md-none"><span class="read-more-btn">Показать полностью</span></div>
+							<div class="course-buttons">
+								<a href="#call" class="btn btn-red popup-sm">Попробовать бесплатно</a>
+								<!-- <a href="#oge-detail" class="popup-lg btn btn-transparent">Подробнее</a> -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="tab-content course" id="exams">
+				<div class="row">
+					<div class="col-5 d-none d-xl-block">
+						<div class="course-img"><img src="/img/courses/exams.svg" alt="Подготовка к международным экзаменам"></div>
+					</div>
+					<div class="col-xl-7">
+						<div class="course-content">
+							<div class="course-title">Подготовка к международным экзаменам</div>
+							<div class="course-price">
+								<div class="course-price__select">
+									<select name="price-select" class="input">
+										<option value="800">Индивидуальные занятия</option>
+										<option value="640" selected>Групповые занятия (2 человека) </option>
+									</select>
+								</div>
+								<div class="course-price__result">
+									<span class="price-result">640</span> руб. / 1 час
+								</div>
+							</div>
+							<div class="course-links">
+								<a href="#groups" class="btn-link popup-lg">Почему групповые занятия эффективнее?</a>
+								<a href="#prices" class="btn-link popup-lg">Посмотреть все варианты и цены</a>
+							</div>
+							<div class="course-img d-xl-none"><img src="/img/courses/exams.svg" alt="Английский для школьников"></div>
+							<div class="course-text read-more">
+								<p>Мы предлагаем профессиональную подготовку школьников к сдаче международных экзаменов. Наши опытные и высококвалифицированные преподаватели качественно подготовят Ваших детей к сдаче таких экзаменов, как:</p>
+								<ul>
+									<li>YLE Starters (Pre A1), YLE Movers (A1), YLE Flyers (A2)</li>
+									<li>KET (A2), PET (B1), FCE (B2)</li>
+								</ul>
+								<p>Мы не просто помогаем ученикам повысить уровень владения языком, но и знакомим их с форматом и особенностями проведения экзамена, правилами выполнения тестовых заданий и оказываем необходимую психологическую поддержку. Наши преподаватели, у многих из которых имеются международные сертификаты, поделятся своим опытом сдачи экзамена и дадут советы, как получить наивысший балл.</p>
+								<p>Для языковой подготовки используются учебные пособия авторитетных издательств Cambridge University Press, Longman, Macmillan и др., соответствующие выбранному экзамену, а также устные и письменные задания, основанные на реальных тестовых вариантах.</p>
+							</div>
+							<div class="read-more-wrap d-md-none"><span class="read-more-btn">Показать полностью</span></div>
+							<div class="course-buttons">
+								<a href="#call" class="btn btn-red popup-sm">Попробовать бесплатно</a>
+								<!-- <a href="#exams-detail" class="popup-lg btn btn-transparent">Подробнее</a> -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="tab-content course" id="online">
+				<div class="row">
+					<div class="col-5 d-none d-xl-block">
+						<div class="course-img"><img src="/img/courses/online.png" alt="Английский онлайн"></div>
+					</div>
+					<div class="col-xl-7">
+						<div class="course-content">
+							<div class="course-title">Английский онлайн</div>
+							<div class="course-price">
+								<div class="course-price__select">
+									<select name="price-select" class="input">
+										<option value="700">Индивидуальные занятия</option>
+										<option value="560">Групповые занятия (2 человека) </option>
+										<option value="460" selected>Групповые занятия (4 человека) </option>
+									</select>
+								</div>
+								<div class="course-price__result">
+									<span class="price-result">460</span> руб. / 1 час
+								</div>
+							</div>
+							<div class="course-links">
+								<a href="#groups" class="btn-link popup-lg">Почему групповые занятия эффективнее?</a>
+								<a href="#prices" class="btn-link popup-lg">Посмотреть все варианты и цены</a>
+							</div>
+							<div class="course-img d-xl-none"><img src="/img/courses/online.png" alt="Английский для школьников"></div>
+							<div class="course-text read-more">
+								<p>Онлайн обучение английскому языку - это прекрасная альтернатива «обычным» репетиторам и занятиям в клубах и школах. Дистанционные занятия с Englishburgh имеют ряд неоспоримых преимуществ:</p>
+								<ul>
+									<li>Вам больше не нужно тратить время на дорогу.</li>
+									<li>Во время занятия Вы и Ваши дети получают ценные знания в привычной и комфортной домашней обстановке.</li>
+									<li>Большое количество встроенных функций и возможностей онлайн платформ становятся эффективным дополнением нашей классической методике.</li>
+									<li>Вам все ещё кажется, что онлайн занятия не могут заменить «живого» общения с преподавателем? Благодаря высокому качеству звука и видео онлайн платформы Zoom наши педагоги с лёгкостью контролируют Ваше произношение, правописание и грамматику.</li>
+								</ul>
+							</div>
+							<div class="read-more-wrap d-md-none"><span class="read-more-btn">Показать полностью</span></div>
+							<div class="course-buttons">
+								<a href="#call" class="btn btn-red popup-sm">Попробовать бесплатно</a>
+								<!-- <a href="#online-detail" class="popup-lg btn btn-transparent">Подробнее</a> -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<div class="popup" id="groups">
+	<div class="popup-title">Почему групповые занятия эффективнее?</div>
+	<div class="row">
+		<div class="col-6 d-none d-md-block">
+			<div class="popup-img">
+				<img src="/img/popup/method.png" alt="Почему групповые занятия эффективнее?">
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div class="popup-text">
+				<p>Групповые занятия в отличие от индивидуальных включают в себя намного больше разговорной практики, что очень положительно сказывается на развитии навыков: понимание речи, разговорный навык, беглость речи.</p>
+				<p>Преимущества групповых занятий</p>
+				<p>1. Низкая стоимость занятий. Уроки в группе намного дешевле занятий один на один с преподавателем.</p>
+				<p>2. Легко преодолеть языковой барьер. В группе у вас появляется возможность общения. Ведь язык нам нужен именно для этого. И общаться мы хотим со всем миром, а не только с одним человеком. Занятия в группе часто намного динамичнее и разнообразнее.</p>
+				<p>3. Улучшение навыка понимания иностранной речи. В группе вы общаетесь с разными людьми. Во время общения вы не только улучшаете разговорный навык, но и учитесь понимать произношение разных людей. Благодаря этому за границей вы намного быстрее адаптируетесь к произношению именно тех людей, которые там живут.</p>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="popup" id="baby-detail">
+	<div class="popup-title">Английский для малышей</div>
+	<div class="row">
+		<div class="col-6">
+			<div class="popup-img">
+				<img src="/img/popup/about-courses.png" alt="Английский для малышей">
+			</div>
+		</div>
+		<div class="col-6">
+			<div class="popup-text">Есть те, кто генерирует идеи. Есть те, кто может эти идеи подхватить и поддержать. Когда те и другие собираются вместе, ведомые единой целью - поделиться своим опытом и знаниями, желанием сделать мир чуточку лучше, рождается нечто цельное. Так получилось и у нас.</div>
+			<div class="popup-text">Вот и перешли к главному. Кто мы? Итак, мы - Englishburgh – сеть школ английского языка. Мы – команда профессионалов, которым доверяют. Наша сеть на данный момент насчитывает 6 офф-лайн филиалов и он-лайн школу. Помимо этого мы активно развиваем направление бизнес английского. Наши педагоги проводят занятия для сотрудников крупных компаний по разработанной нашими методистами программе. Это максимально удобно тем, кто хочет углубить языковые знания в профессиональной сфере.</div>
+		</div>
+	</div>
+</div>
+<div class="popup" id="students-detail">
+	<div class="popup-title">Английский для школьников</div>
+	<div class="row">
+		<div class="col-6">
+			<div class="popup-img">
+				<img src="/img/popup/about-courses.png" alt="Английский для школьников">
+			</div>
+		</div>
+		<div class="col-6">
+			<div class="popup-text">Есть те, кто генерирует идеи. Есть те, кто может эти идеи подхватить и поддержать. Когда те и другие собираются вместе, ведомые единой целью - поделиться своим опытом и знаниями, желанием сделать мир чуточку лучше, рождается нечто цельное. Так получилось и у нас.</div>
+			<div class="popup-text">Вот и перешли к главному. Кто мы? Итак, мы - Englishburgh – сеть школ английского языка. Мы – команда профессионалов, которым доверяют. Наша сеть на данный момент насчитывает 6 офф-лайн филиалов и он-лайн школу. Помимо этого мы активно развиваем направление бизнес английского. Наши педагоги проводят занятия для сотрудников крупных компаний по разработанной нашими методистами программе. Это максимально удобно тем, кто хочет углубить языковые знания в профессиональной сфере.</div>
+		</div>
+	</div>
+</div>
+<div class="popup" id="adults-detail">
+	<div class="popup-title">Английский для взрослых</div>
+	<div class="row">
+		<div class="col-6">
+			<div class="popup-img">
+				<img src="/img/popup/about-courses.png" alt="Английский для взрослых">
+			</div>
+		</div>
+		<div class="col-6">
+			<div class="popup-text">Есть те, кто генерирует идеи. Есть те, кто может эти идеи подхватить и поддержать. Когда те и другие собираются вместе, ведомые единой целью - поделиться своим опытом и знаниями, желанием сделать мир чуточку лучше, рождается нечто цельное. Так получилось и у нас.</div>
+			<div class="popup-text">Вот и перешли к главному. Кто мы? Итак, мы - Englishburgh – сеть школ английского языка. Мы – команда профессионалов, которым доверяют. Наша сеть на данный момент насчитывает 6 офф-лайн филиалов и он-лайн школу. Помимо этого мы активно развиваем направление бизнес английского. Наши педагоги проводят занятия для сотрудников крупных компаний по разработанной нашими методистами программе. Это максимально удобно тем, кто хочет углубить языковые знания в профессиональной сфере.</div>
+		</div>
+	</div>
+</div>
+<div class="popup" id="oge-detail">
+	<div class="popup-title">Подготовка к ОГЭ</div>
+	<div class="row">
+		<div class="col-6">
+			<div class="popup-img">
+				<img src="/img/popup/about-courses.png" alt="Подготовка к ОГЭ">
+			</div>
+		</div>
+		<div class="col-6">
+			<div class="popup-text">Есть те, кто генерирует идеи. Есть те, кто может эти идеи подхватить и поддержать. Когда те и другие собираются вместе, ведомые единой целью - поделиться своим опытом и знаниями, желанием сделать мир чуточку лучше, рождается нечто цельное. Так получилось и у нас.</div>
+			<div class="popup-text">Вот и перешли к главному. Кто мы? Итак, мы - Englishburgh – сеть школ английского языка. Мы – команда профессионалов, которым доверяют. Наша сеть на данный момент насчитывает 6 офф-лайн филиалов и он-лайн школу. Помимо этого мы активно развиваем направление бизнес английского. Наши педагоги проводят занятия для сотрудников крупных компаний по разработанной нашими методистами программе. Это максимально удобно тем, кто хочет углубить языковые знания в профессиональной сфере.</div>
+		</div>
+	</div>
+</div>
+<div class="popup" id="ege-detail">
+	<div class="popup-title">Подготовка к ЕГЭ</div>
+	<div class="row">
+		<div class="col-6">
+			<div class="popup-img">
+				<img src="/img/popup/about-courses.png" alt="Подготовка к ЕГЭ">
+			</div>
+		</div>
+		<div class="col-6">
+			<div class="popup-text">Есть те, кто генерирует идеи. Есть те, кто может эти идеи подхватить и поддержать. Когда те и другие собираются вместе, ведомые единой целью - поделиться своим опытом и знаниями, желанием сделать мир чуточку лучше, рождается нечто цельное. Так получилось и у нас.</div>
+			<div class="popup-text">Вот и перешли к главному. Кто мы? Итак, мы - Englishburgh – сеть школ английского языка. Мы – команда профессионалов, которым доверяют. Наша сеть на данный момент насчитывает 6 офф-лайн филиалов и он-лайн школу. Помимо этого мы активно развиваем направление бизнес английского. Наши педагоги проводят занятия для сотрудников крупных компаний по разработанной нашими методистами программе. Это максимально удобно тем, кто хочет углубить языковые знания в профессиональной сфере.</div>
+		</div>
+	</div>
+</div>
+<div class="popup" id="exams-detail">
+	<div class="popup-title">Подготовка к международным экзаменам</div>
+	<div class="row">
+		<div class="col-6">
+			<div class="popup-img">
+				<img src="/img/popup/about-courses.png" alt="Подготовка к международным экзаменам">
+			</div>
+		</div>
+		<div class="col-6">
+			<div class="popup-text">Есть те, кто генерирует идеи. Есть те, кто может эти идеи подхватить и поддержать. Когда те и другие собираются вместе, ведомые единой целью - поделиться своим опытом и знаниями, желанием сделать мир чуточку лучше, рождается нечто цельное. Так получилось и у нас.</div>
+			<div class="popup-text">Вот и перешли к главному. Кто мы? Итак, мы - Englishburgh – сеть школ английского языка. Мы – команда профессионалов, которым доверяют. Наша сеть на данный момент насчитывает 6 офф-лайн филиалов и он-лайн школу. Помимо этого мы активно развиваем направление бизнес английского. Наши педагоги проводят занятия для сотрудников крупных компаний по разработанной нашими методистами программе. Это максимально удобно тем, кто хочет углубить языковые знания в профессиональной сфере.</div>
+		</div>
+	</div>
+</div>
+<div class="popup" id="online-detail">
+	<div class="popup-title">Английский онлайн</div>
+	<div class="row">
+		<div class="col-6">
+			<div class="popup-img">
+				<img src="/img/popup/about-courses.png" alt="Английский онлайн">
+			</div>
+		</div>
+		<div class="col-6">
+			<div class="popup-text">Есть те, кто генерирует идеи. Есть те, кто может эти идеи подхватить и поддержать. Когда те и другие собираются вместе, ведомые единой целью - поделиться своим опытом и знаниями, желанием сделать мир чуточку лучше, рождается нечто цельное. Так получилось и у нас.</div>
+			<div class="popup-text">Вот и перешли к главному. Кто мы? Итак, мы - Englishburgh – сеть школ английского языка. Мы – команда профессионалов, которым доверяют. Наша сеть на данный момент насчитывает 6 офф-лайн филиалов и он-лайн школу. Помимо этого мы активно развиваем направление бизнес английского. Наши педагоги проводят занятия для сотрудников крупных компаний по разработанной нашими методистами программе. Это максимально удобно тем, кто хочет углубить языковые знания в профессиональной сфере.</div>
+		</div>
+	</div>
+</div>
+<div class="popup" id="prices">
+	<div class="popup-title">Варианты и цены</div>
+	<div class="row">
+		<div class="col-4 d-none d-md-block">
+			<div class="popup-img">
+				<img src="/img/popup/about-courses.png" alt="Английский онлайн">
+			</div>
+		</div>
+		<div class="col-md-8">
+			<!-- <div class="popup-text">
+				<div class="row">
+					<div class="col-12"><span>Английский для малышей и школьников</span></div>
+					<div class="col-12">Индивидуальные занятия – 700 р./час</div>
+					<div class="col-5">Групповые занятия (2 человека)</div>
+					<div class="col-7 text-right">805 рублей 1:30 (1 час 540 рублей)</div>
+				</div>
+				<div class="row">
+					<div class="col-5">Групповые занятия (4 человека)</div>
+					<div class="col-7 text-right">655 рублей 1:30 (1 час 440 рублей)</div>
+				</div>
+				<div class="row">
+					<div class="col-5">Групповые занятия (6 человек)</div>
+					<div class="col-7 text-right">500 рублей 1:30 (1 час 340 рублей)</div>
+				</div>
+				<div class="row mt-2">
+					<div class="col-12"><span>Подготовка к ОГЭ\ЕГЭ</span></div>
+					<div class="col-12">Индивидуальные занятия – 700 р./час</div>
+					<div class="col-5">Групповые занятия (2 человека)</div>
+					<div class="col-7 text-right">805 рублей 1:30 (1 час 540 рублей)</div>
+				</div>
+				<div class="row">
+					<div class="col-5">Групповые занятия (4 человека)</div>
+					<div class="col-7 text-right">655 рублей 1:30 (1 час 440 рублей)</div>
+				</div>
+				<div class="row">
+					<div class="col-5">Групповые занятия (6 человек)</div>
+					<div class="col-7 text-right">500 рублей 1:30 (1 час 340 рублей)</div>
+				</div>
+				<div class="row mt-2">
+					<div class="col-12"><span>Онлайн обучение</span></div>
+					<div class="col-12">Индивидуальные занятия – 700 р./час</div>
+					<div class="col-5">Групповые занятия (2 человека)</div>
+					<div class="col-7 text-right">805 рублей 1:30 (1 час 540 рублей)</div>
+				</div>
+				<div class="row">
+					<div class="col-5">Групповые занятия (4 человека)</div>
+					<div class="col-7 text-right">655 рублей 1:30 (1 час 440 рублей)</div>
+				</div>
+				<div class="row mt-2">
+					<div class="col-12"><span>Английский для взрослых</span></div>
+					<div class="col-12">Индивидуальные занятия – 700 р./час</div>
+					<div class="col-5">Групповые занятия (2 человека)</div>
+					<div class="col-7 text-right">805 рублей 1:30 (1 час 540 рублей)</div>
+				</div>
+				<div class="row">
+					<div class="col-5">Групповые занятия (4 человека)</div>
+					<div class="col-7 text-right">655 рублей 1:30 (1 час 440 рублей)</div>
+				</div>
+				<div class="row">
+					<div class="col-5">Групповые занятия (6 человек)</div>
+					<div class="col-7 text-right">500 рублей 1:30 (1 час 340 рублей)</div>
+				</div>
+				<div class="row mt-2">
+					<div class="col-12"><span>Подготовка к международным экзаменам</span></div>
+					<div class="col-12">Индивидуальные занятия – 800 р./час</div>
+					<div class="col-5">Групповые занятия (2 человека)</div>
+					<div class="col-7 text-right">805 рублей 1:30 (1 час 540 рублей)</div>
+				</div>
+				<div class="row">
+					<div class="col-5">Групповые занятия (4 человека)</div>
+					<div class="col-7 text-right">655 рублей 1:30 (1 час 440 рублей)</div>
+				</div>
+				<div class="row">
+					<div class="col-5">Групповые занятия (6 человек)</div>
+					<div class="col-7 text-right">500 рублей 1:30 (1 час 340 рублей)</div>
+				</div>
+			</div> -->
+			<div class="popup-text">
+				<p>«Английский для дошкольников», «Школьный английский» , «Подготовка к экзаменам ЕГЭ, ОГЭ, ГВЭ»
+				«Английский для взрослых», «Онлайн» (Онлайн обучение не более 4-х человек в группе).</p>
+				<ul>
+					<li>Индивидуальные занятия – 60 минут 700 руб.</li>
+					<li>Групповые занятия (2 человека) – 60 минут 560 руб.</li>
+					<li>Групповые занятия (4 человека) – 60 минут 460 руб.</li>
+					<li>Групповые занятия (6 человек) – 60 минут 360 руб.</li>
+				</ul>
+				<p>«Подготовка к международным экзаменам» (IELTS, TOEFL, TOEIC, YLE, KET, PET, FCE, BEC, BULATS)</p>
+				<ul>
+					<li>Индивидуальные занятия – 60 минут 800 руб.</li>
+					<li>Групповые занятия (2 человека) – 60 минут 640 руб.</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<section class="reviews" id="reviews">
+	<div class="container">
+		<div class="section-title reviews-title text-center">Более 500 положительных отзывов</div>
+		<div class="section-subtitle">Покажем некоторые из них</div>
+		<div class="slider-wrap">
+			<div class="slider reviews-slider owl-carousel">
+				<div class="slider-item review">
+					<div class="row align-items-center">
+						<div class="col-lg-5">
+							<div class="review-video">
+								<!-- <img src="/img/review.jpg" alt="Отзывы о Englishburgh"> -->
+								<iframe src="//vk.com/video_ext.php?oid=-155322947&id=456239204&hash=cf4ffead1c785c5e&hd=2" width="100%" height="280" frameborder="0" allowfullscreen></iframe>
+							</div>
+						</div>
+						<div class="col-lg-7 col-xl-6">
+							<div class="review-text"><span>Проблема:</span> Сложности с английским языком в школе</div>
+							<div class="review-text"><span>Прогресс:</span> Посещаем школу в течение 3-х лет. Очень довольны. На занятиях по английскому театру удалось снять языковой барьер и проработать речь.</div>
+							<div class="review-text"><span>Результат в оценках в школе:</span><p>четвертные и годовая "5"</p></div>
+							<div class="review-text"><span>Оценка родителя:</span><p>Спасибо Вам большое! Мой ребенок делает домашнее задание сам. С оценками проблем нет больше. Мне не стыдно перед учителями. Будем ходить к Вам до конца обучения в школе!</p></div>
+						</div>
+					</div>
+				</div>
+				<div class="slider-item review">
+					<div class="row align-items-center">
+						<div class="col-lg-5">
+							<div class="review-video">
+								<iframe src="//vk.com/video_ext.php?oid=-161706784&id=456239165&hash=1448998b01c3da14&hd=2" width="100%" height="280" frameborder="0" allowfullscreen></iframe>
+							</div>
+						</div>
+						<div class="col-lg-7 col-xl-6">
+							<div class="review-text"><span>Проблема:</span> Не умел читать и писать на английском языке</div>
+							<div class="review-text"><span>Прогресс:</span> Посещаем школу в течение 3-х лет. Ребенок переводит сложные тексты, читает, сформировались знания грамматики</div>
+							<div class="review-text"><span>Результат в оценках в школе:</span><p>четвертные и годовая "4" и "5"</p></div>
+							<div class="review-text"><span>Оценка родителя:</span><p>Довольны. Вообще не делаем уроки вместе. Ребенку нравится заниматься в группе - ребята поддерживают друг друга, по дружески конкурируют и много общаются. Много досуговых программ: английский театр, детский лагерь и пр. Школа светлая, кабинеты удобные. Все способствует обучению.</p></div>
+						</div>
+					</div>
+				</div>
+				<div class="slider-item review">
+					<div class="row align-items-center">
+						<div class="col-lg-5">
+							<div class="review-video">
+								<iframe src="//vk.com/video_ext.php?oid=-161706784&id=456239164&hash=0d7f49e361a0282a&hd=1" width="100%" height="280" frameborder="0" allowfullscreen></iframe>
+							</div>
+						</div>
+						<div class="col-lg-7 col-xl-6">
+							<div class="review-text"><span>Проблема:</span> За лето английский подзабывался, не хватало активности с использованием иностранного языка</div>
+							<div class="review-text"><span>Прогресс:</span>  Посещаем школу очень давно и ездим в лагерь. Очень довольны. 1 сентября нет никаких проблем с повторением английского на уроках.</div>
+							<div class="review-text"><span>Результат в оценках в школе:</span><p>четвертные и годовая "4" и "5"</p></div>
+							<div class="review-text"><span>Оценка родителя:</span><p>Хорошая и школа и все досуговые мероприятия. Девочки в восторге от лагеря и английского театра! Они уже разговаривают между собой на английском языке и всегда сами делают домашнее задание.</p></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="slider-nav">
+				<button class="slider-prev" id="reviews-slider-prev" data-target="reviews-slider"></button>
+				<button class="slider-next" id="reviews-slider-next" data-target="reviews-slider"></button>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="team" id="team">
+	<div class="container">
+		<div class="section-title team-title">Команда преподавателей</div>
+		<div class="section-subtitle">Средний стаж работы наших преподавателей - 15 лет</div>
+		<div class="slider-wrap">
+			<div class="slider team-slider owl-carousel">
+				<div class="slider-item team-item">
+					<div class="row no-gutters">
+						<div class="col-xl-4">
+							<div class="team-item-left">
+								<div class="team-item__photo">
+									<img src="/img/team/Dudnikova.jpg" alt="Дудникова Мария Сергеевна">
+								</div>
+								<div class="team-item__name">Дудникова Мария Сергеевна</div>
+								<div class="team-item__cta">Запишитесь на пробный урок к этому преподавателю</div>
+								<div class="team-item__button">
+									<a href="#call" class="btn btn-red popup-sm">Записаться</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-8">
+							<div class="team-item-right">
+								<div class="team-item__text">
+									<div class="team-item__achievements">
+										<div class="team-item__achievements-icon">
+											<img src="/img/team/1.png" alt="Стаж">
+										</div>
+										<div class="team-item__achievements-descr"><span>Стаж:</span> 19 лет</div>
+									</div>
+									<div class="team-item__achievements">
+										<div class="team-item__achievements-icon">
+											<img src="/img/team/2.png" alt="Образование">
+										</div>
+										<div class="team-item__achievements-descr"><span>Образование:</span> СамГУ, кафедра английской филологии</div>
+									</div>
+									<div class="team-item__achievements">
+										<div class="team-item__achievements-icon">
+											<img src="/img/team/3.png" alt="Специализация">
+										</div>
+										<div class="team-item__achievements-descr"><span>Специализация:</span> <div>Переводчик, филолог, преподаватель английского языка</div></div>
+									</div>
+									<div class="team-item__achievements">
+										<div class="team-item__achievements-icon">
+											<img src="/img/team/4.png" alt="Достижения">
+										</div>
+										<div class="team-item__achievements-descr"><span>Достижения:</span> к. фил. н., автор международной монографии, методических работ, научных статей и учебных пособий</div>
+									</div>
+								</div>
+								<div class="team-item__certs">
+									<div class="team-item__certs-title">Дипломы:</div>
+									<div class="slider-wrap">
+										<div class="cert-slider">
+											<img src="/img/team/Dudnikova-cert.jpg" alt="Диплом с отличием" class="cert-active">
+										</div>
+										<div class="slider-nav">
+											<button class="cert-slider-prev"></button>
+											<button class="cert-slider-next"></button>
+										</div>
+									</div>
+								</div>	
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="slider-item team-item">
+					<div class="row no-gutters">
+						<div class="col-xl-4">
+							<div class="team-item-left">
+								<div class="team-item__photo">
+									<img src="/img/team/Krasova.jpg" alt="Красова Анна Олеговна">
+								</div>
+								<div class="team-item__name">Красова Анна Олеговна</div>
+								<div class="team-item__cta">Запишитесь на пробный урок к этому преподавателю</div>
+								<div class="team-item__button">
+									<a href="#call" class="btn btn-red popup-sm">Записаться</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-8">
+							<div class="team-item-right">
+								<div class="team-item__text">
+									<div class="team-item__achievements">
+										<div class="team-item__achievements-icon">
+											<img src="/img/team/1.png" alt="Стаж">
+										</div>
+										<div class="team-item__achievements-descr"><span>Стаж:</span> 6 лет</div>
+									</div>
+									<div class="team-item__achievements">
+										<div class="team-item__achievements-icon">
+											<img src="/img/team/2.png" alt="Образование">
+										</div>
+										<div class="team-item__achievements-descr"><span>Образование:</span> СГАУ им. ак.С.П. Королева</div>
+									</div>
+									<div class="team-item__achievements">
+										<div class="team-item__achievements-icon">
+											<img src="/img/team/3.png" alt="Специализация">
+										</div>
+										<div class="team-item__achievements-descr"><span>Специализация:</span> <div>Преподаватель английского языка</div></div>
+									</div>
+									<div class="team-item__achievements">
+										<div class="team-item__achievements-icon">
+											<img src="/img/team/4.png" alt="Достижения">
+										</div>
+										<div class="team-item__achievements-descr"><span>Достижения:</span> Сертификаты уровней владения английским  - В2 и С1. 1 место на Всероссийской олимпиаде по английскому языку для студентов нелингвистических специальностей</div>
+									</div>
+								</div>
+								<div class="team-item__certs">
+									<div class="team-item__certs-title">Дипломы:</div>
+									<div class="slider-wrap">
+										<div class="cert-slider">
+											<img src="/img/team/Krasova-cert.jpg" alt="Диплом1" class="cert-active">
+											<img src="/img/team/Krasova-cert2.jpg" alt="Диплом2">
+											<img src="/img/team/Krasova-cert3.jpg" alt="Диплом3">
+											<img src="/img/team/Krasova-cert4.jpg" alt="Диплом4">
+											<img src="/img/team/Krasova-cert5.jpg" alt="Диплом5">
+											<img src="/img/team/Krasova-cert6.jpg" alt="Диплом6">
+											<img src="/img/team/Krasova-cert7.jpg" alt="Диплом7">
+										</div>
+										<div class="slider-nav">
+											<button class="cert-slider-prev"></button>
+											<button class="cert-slider-next"></button>
+										</div>
+									</div>
+								</div>	
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="slider-item team-item">
+					<div class="row no-gutters">
+						<div class="col-xl-4">
+							<div class="team-item-left">
+								<div class="team-item__photo">
+									<img src="/img/team/Osadchaya.jpg" alt="Осадчая Татьяна Юрьевна">
+								</div>
+								<div class="team-item__name">Осадчая Татьяна Юрьевна</div>
+								<div class="team-item__cta">Запишитесь на пробный урок к этому преподавателю</div>
+								<div class="team-item__button">
+									<a href="#call" class="btn btn-red popup-sm">Записаться</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-8">
+							<div class="team-item-right">
+								<div class="team-item__text">
+									<div class="team-item__achievements">
+										<div class="team-item__achievements-icon">
+											<img src="/img/team/1.png" alt="Стаж">
+										</div>
+										<div class="team-item__achievements-descr"><span>Стаж:</span> 5 лет</div>
+									</div>
+									<div class="team-item__achievements">
+										<div class="team-item__achievements-icon">
+											<img src="/img/team/2.png" alt="Образование">
+										</div>
+										<div class="team-item__achievements-descr"><span>Образование:</span> СамТГУ, переводчик английского языка в сфере профессиональной коммуникации</div>
+									</div>
+									<div class="team-item__achievements">
+										<div class="team-item__achievements-icon">
+											<img src="/img/team/3.png" alt="Специализация">
+										</div>
+										<div class="team-item__achievements-descr"><span>Специализация:</span> <div>Преподаватель английского языка, Подготовка детей к Кембриджским экзаменам</div></div>
+									</div>
+									<div class="team-item__achievements">
+										<div class="team-item__achievements-icon">
+											<img src="/img/team/4.png" alt="Достижения">
+										</div>
+										<div class="team-item__achievements-descr"><span>Достижения:</span> Стажировка в Ирландии, Malvern house (Дублин 2016г.)</div>
+									</div>
+								</div>
+								<div class="team-item__certs">
+									<div class="team-item__certs-title">Дипломы:</div>
+									<div class="slider-wrap">
+										<div class="cert-slider">
+											<img src="/img/team/Osadchaya-cert1.jpg" alt="Диплом1" class="cert-active">
+											<img src="/img/team/Osadchaya-cert2.jpg" alt="Диплом2">
+										</div>
+										<div class="slider-nav">
+											<button class="cert-slider-prev"></button>
+											<button class="cert-slider-next"></button>
+										</div>
+									</div>
+								</div>	
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="slider-nav">
+				<button class="slider-prev" id="team-slider-prev" data-target="team-slider"></button>
+				<button class="slider-next" id="team-slider-next" data-target="team-slider"></button>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="system">
+	<div class="container">
+		<div class="section-title">Экосистема изучения английского в ENGLISHBURGH</div>
+		<div class="section-subtitle">Мы предлагаем экосистему, которая позволит окунуть ребенка в языковую среду, снять языковой барьер и весело, но с пользой, провести время</div>
+		<div class="row justify-content-center">
+			<div class="col-sm-8 col-lg-4">
+				<div class="system-item">
+					<div class="system-item__title">Английский театр</div>
+					<div class="system-item__subtitle">Приглашаем вас стать актерами английского театра на базе нашей школы</div>
+					<div class="system-item__img"><img src="/img/system/1.png" alt="Английский театр"></div>
+					<div class="system-item__button">
+						<a href="#system-theater" class="btn btn-red popup-lg">Подробнее</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-8 col-lg-4">
+				<div class="system-item">
+					<div class="system-item__title">Лагерь</div>
+					<div class="system-item__subtitle">5 раз в год компания устраивает выездные и внутришкольные лингвистические лагеря</div>
+					<div class="system-item__img"><img src="/img/system/2.png" alt="Лагерь"></div>
+					<div class="system-item__button">
+						<a href="#system-camp" class="btn btn-red popup-lg">Подробнее</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-8 col-lg-4">
+				<div class="system-item">
+					<div class="system-item__title">Мероприятия и поездки</div>
+					<div class="system-item__subtitle">В Englishburgh богатая внешкольная жизнь - различные мероприятия и поездки</div>
+					<div class="system-item__img"><img src="/img/system/3.png" alt="Мероприятия и поездки"></div>
+					<div class="system-item__button">
+						<a href="#system-events" class="btn btn-red popup-lg">Подробнее</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<div class="popup" id="system-theater">
+	<div class="popup-title">Английский театр</div>
+	<div class="row mb-3">
+		<div class="col-md-6">
+			<div class="popup-img">
+				<img src="/img/system/theater1.jpg" alt="Английский театр">
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div class="popup-img">
+				<img src="/img/system/theater2.jpg" alt="Английский театр">
+			</div>
+		</div>
+	</div>
+	<div class="popup-text">Что делать, если Ваш ребенок не желает сидеть за партой, а получать знания необходимо?!  Правильно! Раскрасить уроки новыми яркими красками!</div>
+	<div class="popup-text">Если Ваш ребенок творческая личность, ему отлично подойдут такие занятия! Он не просто пополнит свой сундучок знаний, а сможет раскрепоститься, ему будет намного проще разговаривать и воспринимать информацию на английском! Апогеем каждой сессии театра является сценический спектакль.</div>
+</div>
+
+<div class="popup" id="system-camp">
+	<div class="popup-title">Лагерь</div>
+	<div class="row mb-3">
+		<div class="col-md-6">
+			<div class="popup-img">
+				<img src="/img/system/camp1.jpg" alt="Лагерь">
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div class="popup-img">
+				<img src="/img/system/camp2.jpg" alt="Лагерь">
+			</div>
+		</div>
+	</div>
+	<div class="popup-text">А как насчет того, чтобы провести свои каникулы в лучшем лагере Самарской области, в кругу друзей и супер вожатых? И это еще не Все! Каждый день будет насыщен спортивными, творческими мероприятиями на английском языке. Каждый день будут увлекательные занятия с учителями по английскому языку!</div>
+	<div class="popup-text">Размещение в номерах класса стандарт и комфорт. Пятиразовое питание Новые знакомства, незабываемые впечатления и эмоции мы гарантируем!</div>
+	<div class="popup-text">Не упустите возможность сделать каникулы незабываемыми!</div>
+</div>
+
+<div class="popup" id="system-events">
+	<div class="popup-title">Мероприятия и поездки</div>
+	<div class="row mb-3">
+		<div class="col-md-6">
+			<div class="popup-img">
+				<img src="/img/system/events1.jpg" alt="Мероприятия и поездки">
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div class="popup-img">
+				<img src="/img/system/events2.jpg" alt="Мероприятия и поездки">
+			</div>
+		</div>
+	</div>
+	<div class="popup-text">Englishburgh это не просто школа, где Вы учите английский.</div>
+	<div class="popup-text">Это место, где Вы найдёте новых друзей, круто проведёте время всей семьей, примете участие в познавательных мастер-классах и повеселитесь на наших тематических вечеринках! В Englishburgh мы организуем увлекательные мероприятия круглый год: поездки на ферму пушистых хаски, празднование Хэллоуина с аквагримом, приключенческие квесты, командные игры в мафию, кондитерские мастерские, конкурсы детских рисунков и многое другое. Присоединяйтесь к нашей дружной семье Englishburgh!</div>
+	<div class="popup-text">Будет интересно!</div>
+</div>
+<section class="about" id="about">
+	<div class="container">
+		<div class="section-title">
+			О школе ENGLISHBURGH
+		</div>
+		<div class="row">
+			<div class="col-6 d-none d-xl-block">
+			<div class="about-img"><img src="/img/about/bg.png" alt="О школе ENGLISHBURGH">
+			</div>
+			</div>
+			<div class="col-xl-6">
+				<div class="about-content">
+					<div class="about-text read-more"><p>Есть те, кто генерирует идеи. Есть те, кто может эти идеи подхватить и поддержать. Когда те и другие собираются вместе, ведомые единой целью - поделиться своим опытом и знаниями, желанием сделать мир чуточку лучше, рождается нечто цельное. Так получилось и у нас.</p>
+					<p>“Father, mother, me - English-speaking family!” “Папа, мама, я - англоязычная семья!” Именно эта фраза легла в основу нашей идеи. Идеи места, где можно обучаться всей семьей, независимо от возраста и уровня знаний. Так появилась наша первая школа английского языка Englishburgh.</p>
+					<p>Вот и перешли к главному. Кто мы? Итак, мы - Englishburgh – сеть школ английского языка. Мы – команда профессионалов, которым доверяют. Наша сеть на данный момент насчитывает 6 офф-лайн филиалов и он-лайн школу. Помимо этого мы активно развиваем направление бизнес английского. Наши педагоги проводят занятия для сотрудников крупных компаний по разработанной нашими методистами программе. Это максимально удобно тем, кто хочет углубить языковые знания в профессиональной сфере.</p>
+				</div>
+				<div class="read-more-wrap d-md-none"><span class="read-more-btn">Показать полностью</span>
+				</div>
+				<div class="about-img d-xl-none"><img src="/img/about/bg.png" alt="О школе ENGLISHBURGH">
+				</div>
+					<div class="about-achievements">
+						<div class="row justify-content-center">
+							<div class="col-6 col-sm">
+								<div class="achievement">
+									<div class="achievement-num">3</div>
+									<div class="achievement-title">года работы</div>
+								</div>
+							</div>
+							<div class="col-6 col-sm">
+								<div class="achievement">
+									<div class="achievement-num">50</div>
+									<div class="achievement-title">преподавателей</div>
+								</div>
+							</div>
+							<div class="col-6 col-sm">
+								<div class="achievement">
+									<div class="achievement-num">6</div>
+									<div class="achievement-title">филиалов</div>
+								</div>
+							</div>
+							<div class="col-6 col-sm">
+								<div class="achievement">
+									<div class="achievement-num">1000</div>
+									<div class="achievement-title">учеников</div>
+								</div>
+							</div>
+							<div class="col-6 col-sm">
+								<div class="achievement">
+									<div class="achievement-num">200</div>
+									<div class="achievement-title">экзаменов</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="about-gallery gallery">
+			<div class="section-title">Наши фотографии и видео</div>
+			<div class="slider-wrap">
+				<div class="gallery-slider photo-slider owl-carousel">
+					<div class="gallery-slider__item">
+						<a href="/img/about/1.jpg" class="popup-lg">
+							<img src="/img/about/1-min.jpg" alt="Наши фотографии">
+						</a>
+					</div>
+					<div class="gallery-slider__item">
+						<a href="/img/about/2.jpg" class="popup-lg">
+							<img src="/img/about/2-min.jpg" alt="Наши фотографии">
+						</a>
+					</div>
+					<div class="gallery-slider__item">
+						<a href="/img/about/3.jpg" class="popup-lg">
+							<img src="/img/about/3-min.jpg" alt="Наши фотографии">
+						</a>
+					</div>
+					<div class="gallery-slider__item">
+						<a href="/img/about/4.jpg" class="popup-lg">
+							<img src="/img/about/4-min.jpg" alt="Наши фотографии">
+						</a>
+					</div>
+					<div class="gallery-slider__item">
+						<a href="/img/about/5.jpg" class="popup-lg">
+							<img src="/img/about/5-min.jpg" alt="Наши фотографии">
+						</a>
+					</div>
+					<div class="gallery-slider__item">
+						<a href="/img/about/6.jpg" class="popup-lg">
+							<img src="/img/about/6-min.jpg" alt="Наши фотографии">
+						</a>
+					</div>
+					<div class="gallery-slider__item">
+						<a href="/img/about/7.jpg" class="popup-lg">
+							<img src="/img/about/7-min.jpg" alt="Наши фотографии">
+						</a>
+					</div>
+					<div class="gallery-slider__item">
+						<a href="/img/about/8.jpg" class="popup-lg">
+							<img src="/img/about/8-min.jpg" alt="Наши фотографии">
+						</a>
+					</div>
+					<div class="gallery-slider__item">
+						<a href="/img/about/9.jpg" class="popup-lg">
+							<img src="/img/about/9-min.jpg" alt="Наши фотографии">
+						</a>
+					</div>
+					<div class="gallery-slider__item">
+						<a href="/img/about/10.jpg" class="popup-lg">
+							<img src="/img/about/10-min.jpg" alt="Наши фотографии">
+						</a>
+					</div>
+					<div class="gallery-slider__item">
+						<a href="/img/about/11.jpg" class="popup-lg">
+							<img src="/img/about/11-min.jpg" alt="Наши фотографии">
+						</a>
+					</div>
+					<div class="gallery-slider__item">
+						<a href="/img/about/12.jpg" class="popup-lg">
+							<img src="/img/about/12-min.jpg" alt="Наши фотографии">
+						</a>
+					</div>
+					<div class="gallery-slider__item">
+						<a href="/img/about/13.jpg" class="popup-lg">
+							<img src="/img/about/13-min.jpg" alt="Наши фотографии">
+						</a>
+					</div>
+					<div class="gallery-slider__item">
+						<a href="/img/about/14.jpg" class="popup-lg">
+							<img src="/img/about/14-min.jpg" alt="Наши фотографии">
+						</a>
+					</div>
+					<div class="gallery-slider__item">
+						<a href="/img/about/15.jpg" class="popup-lg">
+							<img src="/img/about/15-min.jpg" alt="Наши фотографии">
+						</a>
+					</div>
+					<div class="gallery-slider__item">
+						<a href="/img/about/16.jpg" class="popup-lg">
+							<img src="/img/about/16-min.jpg" alt="Наши фотографии">
+						</a>
+					</div>
+					<div class="gallery-slider__item">
+						<a href="/img/about/17.jpg" class="popup-lg">
+							<img src="/img/about/17-min.jpg" alt="Наши фотографии">
+						</a>
+					</div>
+					<div class="gallery-slider__item">
+						<a href="/img/about/18.jpg" class="popup-lg">
+							<img src="/img/about/18-min.jpg" alt="Наши фотографии">
+						</a>
+					</div>
+					<div class="gallery-slider__item">
+						<a href="/img/about/19.jpg" class="popup-lg">
+							<img src="/img/about/19-min.jpg" alt="Наши фотографии">
+						</a>
+					</div>
+					<div class="gallery-slider__item">
+						<a href="/img/about/20.jpg" class="popup-lg">
+							<img src="/img/about/20-min.jpg" alt="Наши фотографии">
+						</a>
+					</div>
+				</div>
+				<div class="slider-nav">
+					<button class="slider-prev" data-target='photo-slider'></button>
+					<button class="slider-next" data-target='photo-slider'></button>
+				</div>
+			</div>
+			<div class="slider-wrap">
+				<div class="gallery-slider video-slider owl-carousel">
+					<div class="gallery-slider__item">
+						<iframe src="//vk.com/video_ext.php?oid=475524529&id=456239085&hash=41121f3af1d2c241&hd=2" width="100%" height="244" frameborder="0" allowfullscreen></iframe>
+					</div>
+					<div class="gallery-slider__item">
+						<iframe src="//vk.com/video_ext.php?oid=475524529&id=456239088&hash=62496427f8ee9d6e&hd=1" width="100%" height="244" frameborder="0" allowfullscreen></iframe>
+					</div>
+					<div class="gallery-slider__item">
+						<iframe src="//vk.com/video_ext.php?oid=475524529&id=456239086&hash=f830a679b6ed4eaf&hd=2" width="100%" height="244" frameborder="0" allowfullscreen></iframe>
+					</div>
+					<div class="gallery-slider__item">
+						<iframe src="//vk.com/video_ext.php?oid=475524529&id=456239093&hash=3d99a30e835634d3&hd=2" width="100%" height="244" frameborder="0" allowfullscreen></iframe>
+					</div>
+					<div class="gallery-slider__item">
+						<iframe src="//vk.com/video_ext.php?oid=-155322947&id=456239114&hash=fb37201dd3587f20&hd=2" width="100%" height="244" frameborder="0" allowfullscreen></iframe>
+					</div>
+					<div class="gallery-slider__item">
+						<iframe src="//vk.com/video_ext.php?oid=-155322947&id=456239112&hash=d8c96d5a0781d48a&hd=2" width="100%" height="244" frameborder="0" allowfullscreen></iframe>
+					</div>
+					<div class="gallery-slider__item">
+						<iframe src="//vk.com/video_ext.php?oid=-155322947&id=456239084&hash=4a883710bb82a911&hd=1" width="100%" height="244" frameborder="0" allowfullscreen></iframe>
+					</div>
+					<div class="gallery-slider__item">
+						<iframe src="//vk.com/video_ext.php?oid=475524529&id=456239051&hash=7c074ad7663be670&hd=1" width="100%" height="244" frameborder="0" allowfullscreen></iframe>
+					</div>
+					<div class="gallery-slider__item">
+						<iframe src="//vk.com/video_ext.php?oid=-155322947&id=456239096&hash=b61fd0c017d94a6a&hd=2" width="100%" height="244" frameborder="0" allowfullscreen></iframe>
+					</div>
+				</div>
+				<div class="slider-nav">
+					<button class="slider-prev" data-target='video-slider'></button>
+					<button class="slider-next" data-target='video-slider'></button>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="method" id="method">
+	<div class="container">
+		<div class="section-title">
+			Почему классическая методика
+		</div>
+		<!-- /.section-title -->
+		<div class="section-subtitle">
+			Комплексный подход = планомерное и гармоничное выстраивание прочной системы знаний + регулярная речевая практика
+		</div>
+		<!-- /.section-subtitle -->
+		<div class="row">
+			<div class="col-lg-6">
+				<div class="method-graph">
+					<div class="method-graph__img">
+						<img src="/img/method/graph.svg" alt="Почему классическая методика">
+					</div>
+					<div class="method-graph__text">
+						<span>ВАЖНО!</span> Изучение правил составляет не более <span>10%</span> от времени урока
+					</div>
+					<div class="method-graph__link">
+						<a href="#about-method" class="btn-link popup-lg">Подробнее о классической методикке</a>
+					</div>
+				</div>
+			</div>
+			<!-- /.col-6 -->
+			<div class="col-lg-6">
+				<div class="method-utp">
+					<div class="row d-none d-sm-flex">
+						<div class="col-6">
+							<div class="method-utp__item mb-78">
+								<div class="method-utp__item-icon">
+									<img src="/img/method/1.png" alt="Ликвидация языкового и психологического барьера">
+								</div>
+								<div class="method-utp__item-title">Ликвидация языкового и психологического барьера</div>
+							</div>
+						</div>
+						<div class="col-6">
+							<div class="method-utp__item mb-78">
+								<div class="method-utp__item-icon">
+									<img src="/img/method/2.png" alt="Подходит для подготовки к любым экзаменам">
+								</div>
+								<div class="method-utp__item-title">Подходит для подготовки к любым экзаменам</div>
+							</div>
+						</div>
+						<div class="col-6">
+							<div class="method-utp__item">
+								<div class="method-utp__item-icon">
+									<img src="/img/method/3.png" alt="Подходит для любых целей: для учебы, работы и пр.">
+								</div>
+								<div class="method-utp__item-title">Подходит для любых целей: для учебы, работы и пр.</div>
+							</div>
+						</div>
+						<div class="col-6">
+							<div class="method-utp__item">
+								<div class="method-utp__item-icon">
+									<img src="/img/method/4.png" alt="Сочетается со школьной программой">
+								</div>
+								<div class="method-utp__item-title">Сочетается со школьной программой</div>
+							</div>
+						</div>
+					</div>
+					<div class="slider-wrap d-sm-none">
+						<div class="utp-slider owl-carousel">
+							<div class="method-utp__item">
+								<div class="method-utp__item-icon">
+									<img src="/img/method/1.png" alt="Ликвидация языкового и психологического барьера">
+								</div>
+								<div class="method-utp__item-title">Ликвидация языкового и психологического барьера</div>
+							</div>
+							<div class="method-utp__item">
+								<div class="method-utp__item-icon">
+									<img src="/img/method/2.png" alt="Подходит для подготовки к любым экзаменам">
+								</div>
+								<div class="method-utp__item-title">Подходит для подготовки к любым экзаменам</div>
+							</div>
+							<div class="method-utp__item">
+								<div class="method-utp__item-icon">
+									<img src="/img/method/3.png" alt="Подходит для любых целей: для учебы, работы и пр.">
+								</div>
+								<div class="method-utp__item-title">Подходит для любых целей: для учебы, работы и пр.</div>
+							</div>
+							<div class="method-utp__item">
+								<div class="method-utp__item-icon">
+									<img src="/img/method/4.png" alt="Сочетается со школьной программой">
+								</div>
+								<div class="method-utp__item-title">Сочетается со школьной программой</div>
+							</div>
+						</div>
+						<div class="slider-nav">
+							<button class="slider-prev" data-target="utp-slider"></button>
+							<button class="slider-next" data-target="utp-slider"></button>
+						</div>
+					</div>
+				</div>
+				<div class="method-button">
+					<a href="#call" class="btn btn-red popup-sm">Записать на бесплатный урок</a>
+				</div>
+				<div class="cta">Оставьте заявку, это ни к чему не обязывает</div>
+			</div>
+			<!-- /.col-6 -->
+		</div>
+		<!-- /.row -->
+	</div>
+	<!-- /.container -->
+</section>
+<!-- /.method -->
+<div class="popup" id="about-method">
+	<div class="popup-title">Подробнее о классической методике</div>
+	<div class="row">
+		<div class="col-6 d-none d-md-block">
+			<div class="popup-img">
+				<img src="/img/popup/method.png" alt="Подробнее о классической методике">
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div class="popup-text">Почему классическая методика? Эффективность и гарантированный результат + уверенность в своих знаниях!</div>
+			<div class="popup-text">- После обучения наши учащиеся могут грамотно формулировать мысли в письменной и устной форме, быстро читать на английском, переводить.</div>
+			<div class="popup-text">- Сочетание со школьной программой и государственными стандартами позволяетучащимся  повысить свои отметки по английскому языку;</div>
+			<div class="popup-text">- Методика позволяет адаптировать программу под индивидуальные запросы каждогообучающегося, не теряя при этом в качестве;</div>
+			<div class="popup-text">- Подходит для подготовки к международным экзаменам и промежуточным аттестациям на рабочих местах, а также для дистанционного обучения;</div>
+			<div class="popup-text">Чудеса случаются даже во время изучения английского языка, но, тем не менее, любое обучениестановится на 100% эффективнее, если мы все регулярно прилагаем усердие, упорство и труд!</div>
+		</div>
+	</div>
+</div>
+<section class="faq" id="faq">
+	<div class="container">
+		<div class="section-title">
+			Вопрос-ответ
+		</div>
+		<!-- /.section-title -->
+		<div class="row">
+			<div class="col-md-6 col-xl-8">
+				<div class="faq-items">
+					<div class="faq-item">
+						<div class="faq-question toggle">Сколько раз в неделю занятия и продолжительность?
+							<div class="toggle-btn"></div>
+						</div>
+						<div class="faq-answer toggle-content">
+							Рекомендуемый минимум - 2 раза в неделю по 1 часу (60 минут)
+						</div>
+					</div>
+					<div class="faq-item">
+						<div class="faq-question toggle">Cколько стоит?
+							<div class="toggle-btn"></div>
+						</div>
+						<div class="faq-answer toggle-content">
+							От 360р за часовое занятие (60 минут)
+						</div>
+					</div>
+					<div class="faq-item">
+						<div class="faq-question toggle">Когда получится заговорить на английском?
+							<div class="toggle-btn"></div>
+						</div>
+						<div class="faq-answer toggle-content">Если четко выполнять домашнее задание, активно учить вокабуляр и ответственно подходить к обучению, то через 3-4 месяца можно наблюдать первые плоды овладения английским языком</div>
+					</div>
+					<div class="faq-item">
+						<div class="faq-question toggle">Оценки в школе станут лучше?
+							<div class="toggle-btn"></div>
+						</div>
+						<div class="faq-answer toggle-content">
+							Конечно, если вы будете следовать методическому плану занятий, то оценка будет 5
+						</div>
+					</div>
+					<div class="faq-item">
+						<div class="faq-question toggle">Можно ли летом не заниматься?
+							<div class="toggle-btn"></div>
+						</div>
+						<div class="faq-answer toggle-content">
+							Можно, но 3 месяца - достаточно большой перерыв, поэтому мы предлагаем летом ненавязчивый график занятий - 1 занятие в неделю
+						</div>
+					</div>
+					<div class="faq-item">
+						<div class="faq-question toggle">Сколько нужно заниматься до приобретения хорошего уровня?
+							<div class="toggle-btn"></div>
+						</div>
+						<div class="faq-answer toggle-content">
+							Все зависит от ваших стараний и мотивации, но, в среднем, от 1 года до 2 лет
+						</div>
+					</div>
+					<div class="faq-item">
+						<div class="faq-question toggle">У нас куча секций. Подберете расписание?
+							<div class="toggle-btn"></div>
+						</div>
+						<div class="faq-answer toggle-content">
+							Конечно, гибкое расписание - это одно из наших главных преимуществ
+						</div>
+					</div>
+					<div class="faq-item">
+						<div class="faq-question toggle">Есть ли вы в нашем районе?
+							<div class="toggle-btn"></div>
+						</div>
+						<div class="faq-answer toggle-content">
+							У нас 6 школ по городу и собственная он-лайн платформа, чтобы обеспечивать проведение занятий из любого уголка мира
+						</div>
+					</div>
+					<div class="faq-item">
+						<div class="faq-question toggle">Со скольки лет обучаете?
+							<div class="toggle-btn"></div>
+						</div>
+						<div class="faq-answer toggle-content">
+							С 3 лет
+						</div>
+					</div>
+					<div class="faq-item">
+						<div class="faq-question toggle">Занимаетесь в выходные и поздно вечером?
+							<div class="toggle-btn"></div>
+						</div>
+						<div class="faq-answer toggle-content">
+							Да, мы работаем 7 дней в неделю с 07.00 утра до 22.00 вечера
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /.col-8 -->
+			<div class="col-md-6 col-xl-4">
+				<div class="faq-form">
+					<div class="form-title">Ответим на любые ваши вопросы</div>
+					<div class="form-subtitle">Оставьте номер телефона, мы свяжемся с Вами и ответим на все Ваши вопросы</div>
+					<form action="" class="form-ajax">
+						<div class="form-alert d-none">Заявка успешно отправлена</div>
+						<div class="form-item">
+							<input type="tel" class="input form-tel" name="phone" id="faq-tel" placeholder="Номер телефона" required>
+						</div>
+						<div class="form-button">
+							<button class="btn btn-red">Задать вопрос</button>
+						</div>
+					</form>
+					<div class="cta">Задайте вопрос, это ни к чему не обязывает</div>
+				</div>
+				<div class="faq-img">
+					<img src="/img/faq-img.png" alt="Вопрос-ответ">
+				</div>
+			</div>
+			<!-- /.col-4 -->
+		</div>
+		<!-- /.row -->
+	</div>
+</section>
+<!-- /.faq -->
+<section class="contacts" id="contacts">
+	<div class="container">
+		<div class="section-title">Контакты</div>
+		<!-- /.section-title -->
+		<div class="contacts-content">
+			<div class="contacts-items">
+				<div class="contacts-item">
+					<div class="contacts-item__icon">
+						<img src="/img/contacts/phone.png" alt="phone">
+					</div>
+					<div class="contacts-item__text">
+						<div class="contacts-item__title">
+							<a href="tel:+78462265020">+7 (846) 226-50-20</a>
+						</div>
+						<div class="contacts-item__value">ежедневно с 9:00 до 22:00</div>
+					</div>
+				</div>
+				<div class="contacts-item">
+					<div class="contacts-item__icon">
+						<img src="/img/contacts/mail.png" alt="mail">
+					</div>
+					<div class="contacts-item__text">
+						<div class="contacts-item__value">
+							<a href="mailto:info@englishburgh.ru">info@englishburgh.ru</a>
+						</div>
+					</div>
+				</div>
+				<div class="contacts-item">
+					<div class="contacts-item__icon">
+						<img src="/img/contacts/loc.png" alt="loc">
+					</div>
+					<div class="contacts-item__text">
+						<div class="contacts-item__title">Адреса филиалов:</div>
+						<div class="contacts-item__value">
+							<p>г. Самара, ул. Солнечная, 16</p>
+							<p>г. Самара, ул. Врубеля, 15</p>
+							<p>г. Самара, ул. Димитрова, 112</p>
+							<p>г. Самара, ул. Физкультурная, 103</p>
+							<p>г. Самара, ул. Печёрская, 20 А</p>
+							<p>г. Самара, Московское шоссе, 29</p>
+						</div>
+					</div>
+				</div>
+				<div class="contacts-item">
+					<div class="contacts-item__icon">
+					</div>
+					<div class="contacts-item__text">
+						<div class="contacts-item__title">Наши соц. сети:</div>
+						<div class="contacts-item__soc">
+							<a href="https://vk.com/club173063706" target="_blank"><img src="/img/contacts/vk.png" alt="vk"></a>
+							<a href="https://www.instagram.com/englishburgh063/" target="_blank"><img src="/img/contacts/instagram.png" alt="instagram"></a>
+							<a href="https://www.youtube.com/channel/UCTDj0LT9sfTgnEXkNA_Xfqg" target="_blank"><img src="/img/contacts/youtube.png" alt="youtube"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /.contacts-items -->
+			<div class="contacts-map" id="contacts-map">
+				
+			</div>
+			<!-- /.contacts-map -->
+		</div>
+		<!-- /.contacts-content -->
+	</div>
+	<!-- /.container -->
+</section>
+<!-- /.contacts -->
+	<footer class="footer">
+		<div class="container">
+			<div class="row justify-content-between align-items-center">
+				<div class="col-md-auto">
+					<div class="footer-item footer-logo">
+						<a href=""><img src="/img/footer-logo.png" alt="Englishburg"></a>
+					</div>
+				</div>
+				<div class="col-md-auto">
+					<div class="footer-item">
+						© 2020 Инглишбург
+					</div>
+				</div>
+				<div class="col-md-auto">
+					<div class="footer-item footer-conf">
+						<a href="#conf" class="popup-lg">Политика конфиденциальности</a>
+					</div>
+				</div>
+				<div class="col-12">
+					<div class="footer-item footer-small text-center">*Вся представленная на сайте информация носит информационный характер и не является публичной офертой</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<div class="popup" id="call">
+		<div class="popup-title">Заказать звонок</div>
+		<div class="form-subtitle">Оставьте номер телефона, мы свяжемся с Вами</div>
+		<form action="" class="form-ajax">
+			<div class="form-alert d-none">Заявка успешно отправлена</div>
+			<div class="form-item">
+				<input type="text" class="input" name="name" id="call-name" placeholder="Ваше имя">
+			</div>
+			<div class="form-item">
+				<input type="tel" class="input form-tel" name="phone" id="call-phone" placeholder="Номер телефона" required>
+			</div>
+			<div class="form-button">
+				<button class="btn btn-red">Заказать звонок</button>
+			</div>
+			<div class="form-conf">
+				<input type="checkbox" class="form-checkbox" name="checkbox" id="call-checkbox" checked required><label for="call-checkbox" class="form-checkbox-label">Соглашаюсь на обработку персональных данных</label>
+			</div>
+		</form>
+	</div>
+	<div class="popup" id="conf">
+		<div class="popup-title">Политика конфиденциальности</div>
+		<div class="text-justify popup-text">
+			<p>Пользователь, оставляя обращение, заявку на сайте https://englishburgh.ru (далее также – сайт), создавая аккаунт и/или соглашаясь с офертой на сайте, принимает настоящее Согласие на обработку персональных данных.</p>
+			<p>Пользователь, действуя свободно, своей волей и в своём интересе, подтверждая свою дееспособность, даёт своё согласие ИП Дудникова на обработку своих персональных данных как с использованием, так и без использования средств автоматизации для целей обработки входящих запросов физических лиц (пользователей) с целью консультирования, направления комментариев физическим лицам (пользователям); аналитики действий физического лица (пользователя) на сайте и функционирования сайта; выполнения обязательств по договору оферты, принятому пользователем на сайте. При этом:</p>
+			<p>Согласие предоставлено для использования моих следующих персональных данных: Фамилия, имя, отчество; номера контактных телефонов; адреса электронной почты; место работы и занимаемая должность; адрес; сведения о местоположении; тип, версия, язык операционной системы, браузера; тип устройства и разрешение его экрана; страницы, открываемые пользователем; ip-адрес.</p>
+			<p>Обработка моих персональных данных может включать следующие действия: сбор, запись, систематизацию, накопление, хранение, уточнение (обновление, изменение), извлечение, использование, передачу (распространение, предоставление, доступ), обезличивание, блокирование, удаление, уничтожение.</p>
+			<p>Настоящее согласие может быть отозвано путём направления субъектом персональных данных (пользователем) или его представителем письменного заявления по адресу электронной почты: dudnikovams@englishburgh.ru. В случае отзыва субъектом персональных данных (пользователем) согласия на обработку персональных данных ИП Дудникова вправе продолжить обработку таких персональных данных в случаях, предусмотренных пунктами 2-11 части 1 статьи 6, пунктами 2-10 части 2 статьи 10, части 2 статьи 11 Федерального закона от 27.07.2006 № 152-ФЗ «О персональных данных».</p>
+			<p>Настоящее согласие предоставляется на неопределённый срок и действует весь период обработки персональных данных. Запросы относительно персональных данных могут быть направлены по электронному адресу: dudnikovams@englishburgh.ru.</p>
+		</div>
+	</div>
+	<div class="popup" id="map">
+		<div class="popup-title">6 филиалов по Самаре</div>
+		<div class="popup-map" id="popup-map">
+			
+		</div>
+	</div>
+	<script src="js/libs.min.js"></script>
+  <script src="js/all.min.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=3766cae0-2835-4e6b-84c5-1daed853858b" type="text/javascript"></script>
+  <script src="map.js"></script>
+</body>
+</html>

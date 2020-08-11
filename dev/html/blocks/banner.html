@@ -1,0 +1,202 @@
+<section class="banner">
+	<div class="banner-left">
+		<div class="banner-left-content">
+			<div class="banner-undertitle">
+              <?/*ПОМОГАЕМ ДЕТЯМ И ВЗРОСЛЫМ ПОНЯТЬ АНГЛИЙСКий ЯЗЫК*/?>
+              <?=$undertitle?>
+          	</div>
+			<div class="banner-title">
+              <?/*Обучение детей и взрослых английскому языку <span>по классической методике</span>*/?>
+              <?=$title?>
+          	</div>
+			<div class="banner-print">
+				<?/*<img src="/img/prints/speak.png" alt="Средний результат - 85 баллов">*/?>
+              	<img src="/img/prints/<?=$print?>" alt='<?=$title?>'>
+			</div>
+		</div>
+	</div>
+	<!-- /.banner-left -->
+	<div class="banner-right">
+		<div class="quiz">
+			<div class="quiz-text">
+				<div class="quiz-title">Ответьте на 4 вопроса и получите скидку на первый месяц обучения 10%</div>
+				<div class="quiz-subtitle">Отвечая на вопросы Вы экономите нам время, а мы за это дарим скидку</div>
+				<div class="quiz-button">
+					<a href="#quiz" class="btn btn-white popup-sm">Получить скидку 10%</a>
+				</div>
+				<div class="cta">Ответы на вопросы ни к чему не обязывают</div>
+			</div>
+			<div class="quiz-img"><img src="/img/bus.png" alt="Подберем удобное расписание и преподавателя"></div>
+		</div>
+	</div>
+	<!-- /.banner-right -->
+</section>
+<!-- /.banner -->
+<div class="popup" id="quiz">
+	<form action="" class="form-ajax">
+		<div class="tab-content tab-content-active" id="districts">
+			<div class="popup-title"> В каком районе Вы проживаете?</div>
+			<div class="row">
+				<div class="col-6">
+					<div class="form-item">
+						<input type="radio" name='district' id="district1" value='Железнодорожный'>
+						<label for="district1">Железнодорожный</label>
+					</div>
+				</div>
+				<div class="col-6">
+					<div class="form-item">
+						<input type="radio" name='district' id="district2" value='Октябрьский'>
+						<label for="district2">Октябрьский</label>
+					</div>
+				</div>
+				<div class="col-6">
+					<div class="form-item">
+						<input type="radio" name='district' id="district3" value='Кировский'>
+						<label for="district3">Кировский</label>
+					</div>
+				</div>
+				<div class="col-6">
+					<div class="form-item">
+						<input type="radio" name='district' id="district4" value='Промышленный'>
+						<label for="district4">Промышленный</label>
+					</div>
+				</div>
+				<div class="col-6">
+					<div class="form-item">
+						<input type="radio" name='district' id="district5" value='Красноглинский'>
+						<label for="district5">Красноглинский</label>
+					</div>
+				</div>
+				<div class="col-6">
+					<div class="form-item">
+						<input type="radio" name='district' id="district6" value='Самарский'>
+						<label for="district6">Самарский</label>
+					</div>
+				</div>
+				<div class="col-6">
+					<div class="form-item">
+						<input type="radio" name='district' id="district7" value='Куйбышевский'>
+						<label for="district7">Куйбышевский</label>
+					</div>
+				</div>
+				<div class="col-6">
+					<div class="form-item">
+						<input type="radio" name='district' id="district8" value='Советский'>
+						<label for="district8">Советский</label>
+					</div>
+				</div>
+				<div class="col-6">
+					<div class="form-item">
+						<input type="radio" name='district' id="district9" value='Ленинский'>
+						<label for="district9">Ленинский</label>
+					</div>
+				</div>
+				<div class="col-6">
+					<div class="form-item">
+						<input type="radio" name='district' id="district10" value='Область'>
+						<label for="district10">Я из области</label>
+					</div>
+				</div>
+			</div>
+			<div class="form-button"><span class="tab btn btn-red" data-target="time">Следующий вопрос</span></div>
+		</div>
+		<div class="tab-content" id="time">
+			<div class="popup-title">В какую смену учитесь?</div>
+			<div class="row">
+				<div class="col-12">
+					<div class="form-item">
+						<input type="radio" name='time' id="time1" value='Первая смена'>
+						<label for="time1">В первую смену</label>
+					</div>
+				</div>
+				<div class="col-12">
+					<div class="form-item">
+						<input type="radio" name='time' id="time2" value='Вторая смена'>
+						<label for="time2">Во вторую смену</label>
+					</div>
+				</div>
+				<div class="col-12">
+					<div class="form-item">
+						<input type="radio" name='time' id="time3" value='Другое'>
+						<label for="time3">Другое</label>
+					</div>
+				</div>
+			</div>
+			<div class="form-button"><span class="tab btn btn-red" data-target="age">Следующий вопрос</span></div>
+		</div>
+		<div class="tab-content" id="age">
+			<div class="popup-title">
+				Сколько лет ребенку?
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<div class="form-item">
+						<input type="radio" name='age' id="age1" value='4-5 лет'>
+						<label for="age1">4-5 лет</label>
+					</div>
+				</div>
+				<div class="col-12">
+					<div class="form-item">
+						<input type="radio" name='age' id="age2" value='6-8 лет'>
+						<label for="age2">6-8 лет</label>
+					</div>
+				</div>
+				<div class="col-12">
+					<div class="form-item">
+						<input type="radio" name='age' id="age3" value='9-12 лет'>
+						<label for="age3">9-12 лет</label>
+					</div>
+				</div>
+				<div class="col-12">
+					<div class="form-item">
+						<input type="radio" name='age' id="age4" value='13-15 лет'>
+						<label for="age4">13-15 лет</label>
+					</div>
+				</div>
+				<div class="col-12">
+					<div class="form-item">
+						<input type="radio" name='age' id="age5" value='16-18 лет'>
+						<label for="age5">16-18 лет</label>
+					</div>
+				</div>
+			</div>
+			<div class="form-button"><span class="tab btn btn-red" data-target="club">Следующий вопрос</span></div>
+		</div>
+		<div class="tab-content" id="club">
+			<div class="popup-title">Изучали английский в каком-то другом клубе?</div>
+			<div class="row">
+				<div class="col-12">
+					<div class="form-item">
+						<input type="radio" name='club' id="club1" value='да'>
+						<label for="club1">Да</label>
+					</div>
+				</div>
+				<div class="col-12">
+					<div class="form-item">
+						<input type="radio" name='club' id="club2" value='нет'>
+						<label for="club2">Нет</label>
+					</div>
+				</div>
+			</div>
+			<div class="form-button"><span class="tab btn btn-red" data-target="quiz-end">Следующий вопрос</span></div>
+		</div>
+		<div class="tab-content" id="quiz-end">
+			<div class="popup-title">Оставьте номер телефона</div>
+			<div class="form-subtitle">Наши менеджеры свяжутся с Вами и подробнее расскажут про скидку</div>
+			<div class="form-alert d-none">Заявка успешно отправлена</div>
+			<div class="form-item">
+				<input class="input" type="text" name="name" id="quiz-name" placeholder="Ваше имя">
+			</div>
+			<div class="form-item">
+				<input class="input form-tel" type="text" name="phone" id="quiz-phone" placeholder="Номер телефона" required>
+			</div>
+			<div class="cta">Оставьте заявку. Это ни к чему не обязывает</div>
+			<div class="form-button">
+				<button class="btn btn-red">Получить скидку</button>
+			</div>
+			<div class="form-conf">
+				<input type="checkbox" class="form-checkbox" name="checkbox" id="quiz-checkbox" checked required><label for="quiz-checkbox" class="form-checkbox-label">Соглашаюсь на обработку персональных данных</label>
+			</div>
+		</div>
+	</form>
+</div>

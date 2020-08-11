@@ -1,0 +1,84 @@
+.banner
+	display: flex
+	&-left
+		width: 42.5%
+		&-content
+			max-width: 535px
+			padding: 196px 15px 42px
+			margin-left: auto
+	&-right
+		width: 57.5%
+		background-color: #D5D7D6
+		background-image: url('../img/main-banner.png')
+		background-position: center
+		background-repeat: no-repeat
+		display: flex
+		align-items: flex-end
+		padding-bottom: 42px
+	&-undertitle
+		font-weight: normal
+		font-size: 17px
+		text-transform: uppercase
+		color: #2E4878
+		margin-bottom: 18px
+		max-width: 365px
+	&-title
+		font-family: Merriweather
+		font-style: normal
+		font-weight: 300
+		font-size: 38px
+		line-height: 60px
+		color: #2E4878
+		margin-bottom: 77px
+		max-width: 475px
+		span
+			font-weight: bold
+	&-print
+		transform: translateX(-50px)
+		position: relative
+		&::after
+			content: ''
+			display: block
+			width: 350px
+			height: 254px
+			background: url('../img/prints/30percent.png') center no-repeat
+			position: absolute
+			right: -20px
+			top: -115px
+.quiz
+	display: flex
+	max-width: 880px
+	transform: translateX(-66px)
+	&-img
+		display: flex
+		justify-content: center
+		align-items: center
+		background: #fff
+		border-radius: 0 5px 5px 0
+		padding: 38px
+	&-text
+		background: #2D4889
+		border-radius: 5px 0px 0px 5px
+		padding: 26px 25px 27px 43px
+		flex-shrink: .9
+	&-title
+		font-family: Merriweather
+		font-style: normal
+		font-weight: 300
+		font-size: 22px
+		color: #FFF
+		margin-bottom: 12px
+	&-subtitle
+		font-weight: 300
+		font-size: 17px
+		color: #FFF
+		margin-bottom: 30px
+		max-width: 375px
+	&-button
+		margin-bottom: 14px
+		.btn
+			padding-left: 30px
+			padding-right: 30px
+	.cta
+		color: #FFF
+		text-align: left

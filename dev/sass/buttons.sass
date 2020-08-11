@@ -1,0 +1,95 @@
+.btn
+	font-weight: 500
+	font-size: 16px
+	border-radius: 4px
+	padding-top: 7px
+	padding-bottom: 7px
+	display: inline-block
+	transition: all .25s ease
+	&-red
+		background: #DE232A
+		border: 2px solid #de232a
+		color: #fff
+		&:hover
+			background: transparent
+			color: #DE232A
+			text-decoration: none
+	&-white
+		color: #264796
+		background: #FFF
+		border: 2px solid #fff
+		&:hover
+			background: transparent
+			color: #fff
+			text-decoration: none
+	&-transparent
+		border: 2px solid #DE232A
+		color: #DE232A
+		box-sizing: border-box
+		border-radius: 4px
+		background: transparent
+		&:hover
+			background: #DE232A
+			color: #fff
+			text-decoration: none
+	&-link
+		color: #DE232A
+		text-decoration: underline
+		display: inline-block
+		font-weight: 300
+		font-size: 17px
+		&:hover
+			color: #2e4878
+.toggle
+	&-open
+		.toggle-btn
+			&::after
+				opacity: 0
+				visibility: hidden
+	&-content
+		height: auto
+		max-height: 0
+		overflow: hidden
+		opacity: 0
+		transition: max-height .3s ease
+		&-open
+			max-height: 500px
+			overflow: none
+			opacity: 1
+			transition: max-height .3s ease, opacity .3s ease
+	&-btn
+		position: absolute
+		right: 0
+		top: calc(50% - 10px)
+		width: 20px
+		height: 20px
+		&::before
+			content: ''
+			display: block
+			width: 20px
+			height: 3px
+			background: #E1373D
+			position: absolute
+			top: calc(50% - 1.5px)
+			left: 0
+		&::after
+			content: ''
+			display: block
+			width: 20px
+			height: 3px
+			background: #E1373D
+			position: absolute
+			top: calc(50% - 1.5px)
+			left: 0
+			transform: rotate(90deg)
+			opacity: 1
+			visibility: visible
+			transition: all .3s ease
+.read-more-wrap
+	margin-bottom: 25px
+.read-more-btn
+	font-weight: 500
+	font-size: 16px
+	text-decoration-line: underline
+	color: #2E4878
+	cursor: pointer

@@ -1,0 +1,67 @@
+.slider
+	&-wrap
+		position: relative
+	&-nav
+		position: absolute
+		top: calc(50% - 22.5px)
+		width: 100%
+		z-index: 10
+		button
+			display: block
+			width: 45px
+			height: 45px
+			position: absolute
+			top: 0
+			background-color: #FFF
+			background-image: url('../img/slider-arrow.png')
+			background-position: 45% 50%
+			background-repeat: no-repeat
+			box-shadow: 0px 0px 11px rgba(166, 166, 166, 0.25)
+			border-radius: 100%
+			border: none
+	&-prev
+		left: -65px
+	&-next
+		right: -65px
+		transform: rotate(180deg)
+.cert
+	&-slider
+		position: relative
+		img
+			position: absolute
+			top: 0
+			left: 0
+			opacity: 0
+			visibility: hidden
+			transition: all .3s ease
+			max-width: 100%
+			&.cert-active
+				opacity: 1
+				visibility: visible
+				position: static
+.team-item__certs .slider-nav button
+	background-color: transparent
+	width: 10px
+	height: 17px
+	background-image: url('../img/certs-slider-arrow.png')
+	box-shadow: none
+.cert-slider-prev
+	left: -28px
+.cert-slider-next
+	right: -28px
+	transform: rotate(180deg)
+.owl-carousel .owl-dots
+	display: flex
+	align-items: center
+	justify-content: center
+	margin-top: 25px
+	.owl-dot
+		width: 13px
+		height: 13px
+		border: 1px solid #DE232A
+		background: transparent
+		margin-left: 10px
+		margin-right: 10px
+		border-radius: 100%
+		&.active
+			background: #DE232A		
